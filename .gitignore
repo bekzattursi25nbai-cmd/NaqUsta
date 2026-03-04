@@ -1,0 +1,123 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Android-specific
+/android/gradle-wrapper.jar
+/android/.gradle/
+/android/captures/
+/android/gradlew
+/android/gradlew.bat
+/android/local.properties
+/android/**/GeneratedPluginRegistrant.java
+/android/**/.cxx/
+
+# Never publicly share your keystore
+/android/**/key.properties
+/android/**/*.keystore
+/android/**/*.jks
+
+# iOS-specific
+/ios/**/dgph
+/ios/*.mode1v3
+/ios/*.mode2v3
+/ios/*.moved-aside
+/ios/*.pbxuser
+/ios/*.perspectivev3
+/ios/**/*sync/
+/ios/.sconsign.dblite
+/ios/.tags*
+/ios/**/.vagrant/
+/ios/**/DerivedData/
+/ios/Icon?
+/ios/**/Pods/
+/ios/**/.symlinks/
+/ios/profile
+/ios/xcuserdata
+/ios/**/.generated/
+/ios/Flutter/App.framework
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/ephemeral/
+/ios/Flutter/app.flx
+/ios/Flutter/app.zip
+/ios/Flutter/flutter_assets/
+/ios/Flutter/flutter_export_environment.sh
+/ios/ServiceDefinitions.json
+/ios/Runner/GeneratedPluginRegistrant.*
+
+# iOS exceptions
+!/ios/default.mode1v3
+!/ios/default.mode2v3
+!/ios/default.pbxuser
+!/ios/default.perspectivev3
+
+# Linux-specific
+/linux/flutter/ephemeral
+
+# macOS-specific
+/macos/**/Flutter/ephemeral/
+/macos/**/Pods/
+/macos/**/dgph
+/macos/**/xcuserdata/
+
+# Windows-specific
+/windows/flutter/ephemeral/
+/windows/**/*.suo
+/windows/**/*.user
+/windows/**/*.userosscache
+/windows/**/*.sln.docstates
+/windows/x64/
+/windows/x86/
+/windows/**/*.[Cc]ache
+!/windows/**/*.[Cc]ache/
+
+# Local secrets and local tooling
+/android/app/google-services.json
+/ios/GoogleService-Info.plist
+/macos/Runner/GoogleService-Info.plist
+/pubspec.yaml.save
+/.codex/

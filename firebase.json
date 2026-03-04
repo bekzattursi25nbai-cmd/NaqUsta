@@ -1,0 +1,66 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "naqusta",
+          "appId": "1:303684659729:android:cc55d6792d4983e4a0dfb0",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "naqusta",
+          "appId": "1:303684659729:ios:6400a5367d72a5e2a0dfb0",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "naqusta",
+          "appId": "1:303684659729:ios:6400a5367d72a5e2a0dfb0",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "naqusta",
+          "configurations": {
+            "android": "1:303684659729:android:cc55d6792d4983e4a0dfb0",
+            "ios": "1:303684659729:ios:6400a5367d72a5e2a0dfb0",
+            "macos": "1:303684659729:ios:6400a5367d72a5e2a0dfb0",
+            "web": "1:303684659729:web:6ad63db5fdb8b9c2a0dfb0",
+            "windows": "1:303684659729:web:8018fd3a51ff0153a0dfb0"
+          }
+        }
+      }
+    }
+  },
+  "functions": {
+    "source": "functions"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "storage": {
+      "port": 9199
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  }
+}

@@ -1,0 +1,6233 @@
+[
+  {
+    "id": "repair",
+    "parentId": null,
+    "level": 0,
+    "order": 10,
+    "isLeaf": false,
+    "name": {
+      "kk": "Жөндеу және әрлеу",
+      "ru": "Ремонт и отделка",
+      "en": "Repair & finishing"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "жөндеу",
+        "әрлеу",
+        "ремонт"
+      ],
+      "ru": [
+        "ремонт",
+        "отделка"
+      ],
+      "en": [
+        "repair",
+        "finishing"
+      ]
+    },
+    "pathIds": [
+      "repair"
+    ]
+  },
+  {
+    "id": "plumbing",
+    "parentId": null,
+    "level": 0,
+    "order": 20,
+    "isLeaf": false,
+    "name": {
+      "kk": "Сантехника",
+      "ru": "Сантехника",
+      "en": "Plumbing"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "сантехника",
+        "су",
+        "құбыр"
+      ],
+      "ru": [
+        "сантехника",
+        "вода",
+        "трубы"
+      ],
+      "en": [
+        "plumbing",
+        "water",
+        "pipes"
+      ]
+    },
+    "pathIds": [
+      "plumbing"
+    ]
+  },
+  {
+    "id": "electric",
+    "parentId": null,
+    "level": 0,
+    "order": 30,
+    "isLeaf": false,
+    "name": {
+      "kk": "Электрика",
+      "ru": "Электрика",
+      "en": "Electrical"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "электрик",
+        "жарық",
+        "сым"
+      ],
+      "ru": [
+        "электрик",
+        "свет",
+        "проводка"
+      ],
+      "en": [
+        "electric",
+        "lighting",
+        "wiring"
+      ]
+    },
+    "pathIds": [
+      "electric"
+    ]
+  },
+  {
+    "id": "build",
+    "parentId": null,
+    "level": 0,
+    "order": 40,
+    "isLeaf": false,
+    "name": {
+      "kk": "Құрылыс және монтаж",
+      "ru": "Строительство и монтаж",
+      "en": "Construction & installation"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "құрылыс",
+        "монтаж",
+        "қалау"
+      ],
+      "ru": [
+        "строительство",
+        "монтаж",
+        "кладка"
+      ],
+      "en": [
+        "construction",
+        "installation",
+        "masonry"
+      ]
+    },
+    "pathIds": [
+      "build"
+    ]
+  },
+  {
+    "id": "doors_windows",
+    "parentId": null,
+    "level": 0,
+    "order": 50,
+    "isLeaf": false,
+    "name": {
+      "kk": "Есік және терезе",
+      "ru": "Двери и окна",
+      "en": "Doors & windows"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "есік",
+        "терезе",
+        "құлып"
+      ],
+      "ru": [
+        "двери",
+        "окна",
+        "замок"
+      ],
+      "en": [
+        "doors",
+        "windows",
+        "locks"
+      ]
+    },
+    "pathIds": [
+      "doors_windows"
+    ]
+  },
+  {
+    "id": "roof_facade",
+    "parentId": null,
+    "level": 0,
+    "order": 60,
+    "isLeaf": false,
+    "name": {
+      "kk": "Шатыр және фасад",
+      "ru": "Кровля и фасад",
+      "en": "Roofing & facade"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "шатыр",
+        "фасад",
+        "утепление"
+      ],
+      "ru": [
+        "кровля",
+        "фасад",
+        "утепление"
+      ],
+      "en": [
+        "roof",
+        "facade",
+        "insulation"
+      ]
+    },
+    "pathIds": [
+      "roof_facade"
+    ]
+  },
+  {
+    "id": "climate_heating",
+    "parentId": null,
+    "level": 0,
+    "order": 70,
+    "isLeaf": false,
+    "name": {
+      "kk": "Климат және жылыту",
+      "ru": "Климат и отопление",
+      "en": "Climate & heating"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "жылыту",
+        "кондиционер",
+        "котел"
+      ],
+      "ru": [
+        "отопление",
+        "кондиционер",
+        "котёл"
+      ],
+      "en": [
+        "heating",
+        "air conditioning",
+        "boiler"
+      ]
+    },
+    "pathIds": [
+      "climate_heating"
+    ]
+  },
+  {
+    "id": "wood_furniture",
+    "parentId": null,
+    "level": 0,
+    "order": 80,
+    "isLeaf": false,
+    "name": {
+      "kk": "Ағаш және жиһаз",
+      "ru": "Дерево и мебель",
+      "en": "Woodwork & furniture"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ағаш",
+        "жиһаз",
+        "плотник"
+      ],
+      "ru": [
+        "дерево",
+        "мебель",
+        "плотник"
+      ],
+      "en": [
+        "woodwork",
+        "furniture",
+        "carpenter"
+      ]
+    },
+    "pathIds": [
+      "wood_furniture"
+    ]
+  },
+  {
+    "id": "outdoor",
+    "parentId": null,
+    "level": 0,
+    "order": 90,
+    "isLeaf": false,
+    "name": {
+      "kk": "Аула және сыртқы жұмыстар",
+      "ru": "Двор и наружные работы",
+      "en": "Outdoor works"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "аула",
+        "сыртқы",
+        "көшe"
+      ],
+      "ru": [
+        "двор",
+        "наружные"
+      ],
+      "en": [
+        "outdoor",
+        "yard"
+      ]
+    },
+    "pathIds": [
+      "outdoor"
+    ]
+  },
+  {
+    "id": "repair.walls",
+    "parentId": "repair",
+    "level": 1,
+    "order": 11,
+    "isLeaf": false,
+    "name": {
+      "kk": "Қабырға жұмыстары",
+      "ru": "Работы по стенам",
+      "en": "Wall works"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "қабырға",
+        "стена"
+      ],
+      "ru": [
+        "стены"
+      ],
+      "en": [
+        "walls"
+      ]
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls"
+    ]
+  },
+  {
+    "id": "repair.ceilings",
+    "parentId": "repair",
+    "level": 1,
+    "order": 12,
+    "isLeaf": false,
+    "name": {
+      "kk": "Төбе жұмыстары",
+      "ru": "Потолки",
+      "en": "Ceiling works"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "төбе",
+        "потолок"
+      ],
+      "ru": [
+        "потолок"
+      ],
+      "en": [
+        "ceiling"
+      ]
+    },
+    "pathIds": [
+      "repair",
+      "repair.ceilings"
+    ]
+  },
+  {
+    "id": "repair.floors",
+    "parentId": "repair",
+    "level": 1,
+    "order": 13,
+    "isLeaf": false,
+    "name": {
+      "kk": "Еден жұмыстары",
+      "ru": "Полы",
+      "en": "Floor works"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "еден",
+        "пол"
+      ],
+      "ru": [
+        "пол"
+      ],
+      "en": [
+        "floor"
+      ]
+    },
+    "pathIds": [
+      "repair",
+      "repair.floors"
+    ]
+  },
+  {
+    "id": "repair.tiles",
+    "parentId": "repair",
+    "level": 1,
+    "order": 14,
+    "isLeaf": false,
+    "name": {
+      "kk": "Плитка",
+      "ru": "Плитка",
+      "en": "Tiling"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "плитка",
+        "кафель"
+      ],
+      "ru": [
+        "плитка",
+        "кафель"
+      ],
+      "en": [
+        "tile",
+        "tiling"
+      ]
+    },
+    "pathIds": [
+      "repair",
+      "repair.tiles"
+    ]
+  },
+  {
+    "id": "repair.drywall",
+    "parentId": "repair",
+    "level": 1,
+    "order": 15,
+    "isLeaf": false,
+    "name": {
+      "kk": "Гипсокартон",
+      "ru": "Гипсокартон",
+      "en": "Drywall"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "гипсокартон",
+        "гкл"
+      ],
+      "ru": [
+        "гипсокартон",
+        "гкл"
+      ],
+      "en": [
+        "drywall",
+        "gypsum board"
+      ]
+    },
+    "pathIds": [
+      "repair",
+      "repair.drywall"
+    ]
+  },
+  {
+    "id": "repair.paintwork",
+    "parentId": "repair",
+    "level": 1,
+    "order": 16,
+    "isLeaf": false,
+    "name": {
+      "kk": "Бояу және лак",
+      "ru": "Покраска и лак",
+      "en": "Paint & lacquer"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "бояу",
+        "лак"
+      ],
+      "ru": [
+        "покраска",
+        "лак"
+      ],
+      "en": [
+        "paint",
+        "lacquer"
+      ]
+    },
+    "pathIds": [
+      "repair",
+      "repair.paintwork"
+    ]
+  },
+  {
+    "id": "repair.waterproofing",
+    "parentId": "repair",
+    "level": 1,
+    "order": 17,
+    "isLeaf": false,
+    "name": {
+      "kk": "Оқшаулау",
+      "ru": "Изоляция",
+      "en": "Insulation & waterproofing"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "оқшаулау",
+        "гидроизоляция"
+      ],
+      "ru": [
+        "изоляция",
+        "гидроизоляция"
+      ],
+      "en": [
+        "insulation",
+        "waterproofing"
+      ]
+    },
+    "pathIds": [
+      "repair",
+      "repair.waterproofing"
+    ]
+  },
+  {
+    "id": "plumbing.install",
+    "parentId": "plumbing",
+    "level": 1,
+    "order": 21,
+    "isLeaf": false,
+    "name": {
+      "kk": "Орнату",
+      "ru": "Монтаж",
+      "en": "Installation"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "орнату"
+      ],
+      "ru": [
+        "монтаж"
+      ],
+      "en": [
+        "installation"
+      ]
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install"
+    ]
+  },
+  {
+    "id": "plumbing.pipes",
+    "parentId": "plumbing",
+    "level": 1,
+    "order": 22,
+    "isLeaf": false,
+    "name": {
+      "kk": "Құбыр жұмыстары",
+      "ru": "Работы с трубами",
+      "en": "Pipes"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "құбыр"
+      ],
+      "ru": [
+        "трубы"
+      ],
+      "en": [
+        "pipes"
+      ]
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.pipes"
+    ]
+  },
+  {
+    "id": "plumbing.repair",
+    "parentId": "plumbing",
+    "level": 1,
+    "order": 23,
+    "isLeaf": false,
+    "name": {
+      "kk": "Жөндеу",
+      "ru": "Ремонт",
+      "en": "Repair"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "жөндеу"
+      ],
+      "ru": [
+        "ремонт"
+      ],
+      "en": [
+        "repair"
+      ]
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.repair"
+    ]
+  },
+  {
+    "id": "plumbing.heating_water",
+    "parentId": "plumbing",
+    "level": 1,
+    "order": 24,
+    "isLeaf": false,
+    "name": {
+      "kk": "Су арқылы жылыту",
+      "ru": "Водяное отопление",
+      "en": "Hydronic heating"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "жылыту",
+        "радиатор"
+      ],
+      "ru": [
+        "отопление",
+        "радиатор"
+      ],
+      "en": [
+        "hydronic",
+        "radiator"
+      ]
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.heating_water"
+    ]
+  },
+  {
+    "id": "electric.wiring",
+    "parentId": "electric",
+    "level": 1,
+    "order": 31,
+    "isLeaf": false,
+    "name": {
+      "kk": "Сым және желі",
+      "ru": "Проводка и сеть",
+      "en": "Wiring"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "сым",
+        "желі"
+      ],
+      "ru": [
+        "проводка"
+      ],
+      "en": [
+        "wiring"
+      ]
+    },
+    "pathIds": [
+      "electric",
+      "electric.wiring"
+    ]
+  },
+  {
+    "id": "electric.lighting",
+    "parentId": "electric",
+    "level": 1,
+    "order": 32,
+    "isLeaf": false,
+    "name": {
+      "kk": "Жарық және шамдар",
+      "ru": "Свет и освещение",
+      "en": "Lighting"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "жарық",
+        "люстра"
+      ],
+      "ru": [
+        "свет",
+        "люстра"
+      ],
+      "en": [
+        "lighting",
+        "chandelier"
+      ]
+    },
+    "pathIds": [
+      "electric",
+      "electric.lighting"
+    ]
+  },
+  {
+    "id": "electric.panel",
+    "parentId": "electric",
+    "level": 1,
+    "order": 33,
+    "isLeaf": false,
+    "name": {
+      "kk": "Щиток және автомат",
+      "ru": "Щит и автоматы",
+      "en": "Panel & breakers"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "щиток",
+        "автомат"
+      ],
+      "ru": [
+        "щит",
+        "автомат"
+      ],
+      "en": [
+        "panel",
+        "breaker"
+      ]
+    },
+    "pathIds": [
+      "electric",
+      "electric.panel"
+    ]
+  },
+  {
+    "id": "electric.low_voltage",
+    "parentId": "electric",
+    "level": 1,
+    "order": 34,
+    "isLeaf": false,
+    "name": {
+      "kk": "Әлсіз ток жүйелері",
+      "ru": "Слаботочные системы",
+      "en": "Low-voltage systems"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "камера",
+        "домофон",
+        "интернет"
+      ],
+      "ru": [
+        "видеонаблюдение",
+        "домофон",
+        "интернет"
+      ],
+      "en": [
+        "cctv",
+        "intercom",
+        "internet"
+      ]
+    },
+    "pathIds": [
+      "electric",
+      "electric.low_voltage"
+    ]
+  },
+  {
+    "id": "build.masonry",
+    "parentId": "build",
+    "level": 1,
+    "order": 41,
+    "isLeaf": false,
+    "name": {
+      "kk": "Қалау",
+      "ru": "Кладка",
+      "en": "Masonry"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "қалау",
+        "кірпіш",
+        "газоблок"
+      ],
+      "ru": [
+        "кладка",
+        "кирпич",
+        "газоблок"
+      ],
+      "en": [
+        "masonry",
+        "brick",
+        "block"
+      ]
+    },
+    "pathIds": [
+      "build",
+      "build.masonry"
+    ]
+  },
+  {
+    "id": "build.concrete",
+    "parentId": "build",
+    "level": 1,
+    "order": 42,
+    "isLeaf": false,
+    "name": {
+      "kk": "Бетон жұмыстары",
+      "ru": "Бетонные работы",
+      "en": "Concrete works"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "бетон",
+        "құю"
+      ],
+      "ru": [
+        "бетон",
+        "заливка"
+      ],
+      "en": [
+        "concrete",
+        "pouring"
+      ]
+    },
+    "pathIds": [
+      "build",
+      "build.concrete"
+    ]
+  },
+  {
+    "id": "build.metal",
+    "parentId": "build",
+    "level": 1,
+    "order": 43,
+    "isLeaf": false,
+    "name": {
+      "kk": "Металл және сварка",
+      "ru": "Металл и сварка",
+      "en": "Metal & welding"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "сварка",
+        "металл"
+      ],
+      "ru": [
+        "сварка",
+        "металл"
+      ],
+      "en": [
+        "welding",
+        "metal"
+      ]
+    },
+    "pathIds": [
+      "build",
+      "build.metal"
+    ]
+  },
+  {
+    "id": "build.carpentry_struct",
+    "parentId": "build",
+    "level": 1,
+    "order": 44,
+    "isLeaf": false,
+    "name": {
+      "kk": "Қаңқа және ағаш конструкция",
+      "ru": "Каркас и дерево-конструкции",
+      "en": "Frames & timber structures"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "каркас",
+        "ағаш конструкция"
+      ],
+      "ru": [
+        "каркас",
+        "дерево"
+      ],
+      "en": [
+        "frame",
+        "timber"
+      ]
+    },
+    "pathIds": [
+      "build",
+      "build.carpentry_struct"
+    ]
+  },
+  {
+    "id": "build.dismantle",
+    "parentId": "build",
+    "level": 1,
+    "order": 45,
+    "isLeaf": false,
+    "name": {
+      "kk": "Демонтаж/бұзу",
+      "ru": "Демонтаж",
+      "en": "Dismantling"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "демонтаж",
+        "бұзу"
+      ],
+      "ru": [
+        "демонтаж"
+      ],
+      "en": [
+        "dismantling"
+      ]
+    },
+    "pathIds": [
+      "build",
+      "build.dismantle"
+    ]
+  },
+  {
+    "id": "build.scaffolding",
+    "parentId": "build",
+    "level": 1,
+    "order": 46,
+    "isLeaf": false,
+    "name": {
+      "kk": "Құрастыру және тіреу",
+      "ru": "Сборка и леса",
+      "en": "Assembly & scaffolding"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "леса",
+        "тіреу"
+      ],
+      "ru": [
+        "леса"
+      ],
+      "en": [
+        "scaffolding"
+      ]
+    },
+    "pathIds": [
+      "build",
+      "build.scaffolding"
+    ]
+  },
+  {
+    "id": "doors_windows.doors",
+    "parentId": "doors_windows",
+    "level": 1,
+    "order": 51,
+    "isLeaf": false,
+    "name": {
+      "kk": "Есік",
+      "ru": "Двери",
+      "en": "Doors"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "есік"
+      ],
+      "ru": [
+        "двери"
+      ],
+      "en": [
+        "doors"
+      ]
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.doors"
+    ]
+  },
+  {
+    "id": "doors_windows.windows",
+    "parentId": "doors_windows",
+    "level": 1,
+    "order": 52,
+    "isLeaf": false,
+    "name": {
+      "kk": "Терезе",
+      "ru": "Окна",
+      "en": "Windows"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "терезе"
+      ],
+      "ru": [
+        "окна"
+      ],
+      "en": [
+        "windows"
+      ]
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.windows"
+    ]
+  },
+  {
+    "id": "doors_windows.hardware",
+    "parentId": "doors_windows",
+    "level": 1,
+    "order": 53,
+    "isLeaf": false,
+    "name": {
+      "kk": "Фурнитура және құлып",
+      "ru": "Фурнитура и замки",
+      "en": "Hardware & locks"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "құлып",
+        "ілмек"
+      ],
+      "ru": [
+        "замок",
+        "петля"
+      ],
+      "en": [
+        "lock",
+        "hinge"
+      ]
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.hardware"
+    ]
+  },
+  {
+    "id": "roof_facade.roof",
+    "parentId": "roof_facade",
+    "level": 1,
+    "order": 61,
+    "isLeaf": false,
+    "name": {
+      "kk": "Шатыр",
+      "ru": "Кровля",
+      "en": "Roof"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "шатыр",
+        "кровля"
+      ],
+      "ru": [
+        "кровля"
+      ],
+      "en": [
+        "roof"
+      ]
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.roof"
+    ]
+  },
+  {
+    "id": "roof_facade.facade",
+    "parentId": "roof_facade",
+    "level": 1,
+    "order": 62,
+    "isLeaf": false,
+    "name": {
+      "kk": "Фасад",
+      "ru": "Фасад",
+      "en": "Facade"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "фасад"
+      ],
+      "ru": [
+        "фасад"
+      ],
+      "en": [
+        "facade"
+      ]
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.facade"
+    ]
+  },
+  {
+    "id": "roof_facade.gutters",
+    "parentId": "roof_facade",
+    "level": 1,
+    "order": 63,
+    "isLeaf": false,
+    "name": {
+      "kk": "Водосток/су бұру",
+      "ru": "Водосток/водоотвод",
+      "en": "Gutters & drainage"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "водосток",
+        "су бұру"
+      ],
+      "ru": [
+        "водосток",
+        "водоотвод"
+      ],
+      "en": [
+        "gutter",
+        "drainage"
+      ]
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.gutters"
+    ]
+  },
+  {
+    "id": "climate_heating.ac",
+    "parentId": "climate_heating",
+    "level": 1,
+    "order": 71,
+    "isLeaf": false,
+    "name": {
+      "kk": "Кондиционер",
+      "ru": "Кондиционер",
+      "en": "Air conditioning"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "кондиционер"
+      ],
+      "ru": [
+        "кондиционер"
+      ],
+      "en": [
+        "air conditioner"
+      ]
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.ac"
+    ]
+  },
+  {
+    "id": "climate_heating.heating",
+    "parentId": "climate_heating",
+    "level": 1,
+    "order": 72,
+    "isLeaf": false,
+    "name": {
+      "kk": "Жылыту",
+      "ru": "Отопление",
+      "en": "Heating"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "жылыту"
+      ],
+      "ru": [
+        "отопление"
+      ],
+      "en": [
+        "heating"
+      ]
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.heating"
+    ]
+  },
+  {
+    "id": "climate_heating.vent",
+    "parentId": "climate_heating",
+    "level": 1,
+    "order": 73,
+    "isLeaf": false,
+    "name": {
+      "kk": "Желдету",
+      "ru": "Вентиляция",
+      "en": "Ventilation"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "вентиляция"
+      ],
+      "ru": [
+        "вентиляция"
+      ],
+      "en": [
+        "ventilation"
+      ]
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.vent"
+    ]
+  },
+  {
+    "id": "wood_furniture.wood",
+    "parentId": "wood_furniture",
+    "level": 1,
+    "order": 81,
+    "isLeaf": false,
+    "name": {
+      "kk": "Ағаш жұмыстары",
+      "ru": "Столярные работы",
+      "en": "Carpentry"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "плотник",
+        "ағаш"
+      ],
+      "ru": [
+        "столяр",
+        "плотник"
+      ],
+      "en": [
+        "carpentry",
+        "carpenter"
+      ]
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.wood"
+    ]
+  },
+  {
+    "id": "wood_furniture.furniture",
+    "parentId": "wood_furniture",
+    "level": 1,
+    "order": 82,
+    "isLeaf": false,
+    "name": {
+      "kk": "Жиһаз",
+      "ru": "Мебель",
+      "en": "Furniture"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "жиһаз"
+      ],
+      "ru": [
+        "мебель"
+      ],
+      "en": [
+        "furniture"
+      ]
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.furniture"
+    ]
+  },
+  {
+    "id": "wood_furniture.kitchens",
+    "parentId": "wood_furniture",
+    "level": 1,
+    "order": 83,
+    "isLeaf": false,
+    "name": {
+      "kk": "Асүй және гарнитур",
+      "ru": "Кухни и гарнитуры",
+      "en": "Kitchens"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "асүй"
+      ],
+      "ru": [
+        "кухни"
+      ],
+      "en": [
+        "kitchens"
+      ]
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.kitchens"
+    ]
+  },
+  {
+    "id": "outdoor.paving",
+    "parentId": "outdoor",
+    "level": 1,
+    "order": 91,
+    "isLeaf": false,
+    "name": {
+      "kk": "Тротуар және төсеу",
+      "ru": "Брусчатка и укладка",
+      "en": "Paving"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "брусчатка",
+        "тротуар"
+      ],
+      "ru": [
+        "брусчатка"
+      ],
+      "en": [
+        "paving"
+      ]
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.paving"
+    ]
+  },
+  {
+    "id": "outdoor.fence",
+    "parentId": "outdoor",
+    "level": 1,
+    "order": 92,
+    "isLeaf": false,
+    "name": {
+      "kk": "Қоршау",
+      "ru": "Ограждения",
+      "en": "Fencing"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "қоршау",
+        "забор"
+      ],
+      "ru": [
+        "забор"
+      ],
+      "en": [
+        "fence"
+      ]
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.fence"
+    ]
+  },
+  {
+    "id": "outdoor.drainage",
+    "parentId": "outdoor",
+    "level": 1,
+    "order": 93,
+    "isLeaf": false,
+    "name": {
+      "kk": "Дренаж және су бұру",
+      "ru": "Дренаж и водоотвод",
+      "en": "Drainage"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "дренаж",
+        "су бұру"
+      ],
+      "ru": [
+        "дренаж",
+        "водоотвод"
+      ],
+      "en": [
+        "drainage"
+      ]
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.drainage"
+    ]
+  },
+  {
+    "id": "outdoor.landscape",
+    "parentId": "outdoor",
+    "level": 1,
+    "order": 94,
+    "isLeaf": false,
+    "name": {
+      "kk": "Абаттандыру",
+      "ru": "Благоустройство",
+      "en": "Landscaping"
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "абаттандыру"
+      ],
+      "ru": [
+        "благоустройство"
+      ],
+      "en": [
+        "landscaping"
+      ]
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.landscape"
+    ]
+  },
+  {
+    "id": "repair.painting",
+    "parentId": "repair.walls",
+    "level": 2,
+    "order": 111,
+    "isLeaf": true,
+    "name": {
+      "kk": "Маляр (покраска)",
+      "ru": "Painting",
+      "en": [
+        "маляр",
+        "бояу",
+        "краска"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "маляр",
+        "покраска",
+        "краска"
+      ],
+      "ru": [
+        "painting",
+        "painter"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls",
+      "repair.painting"
+    ]
+  },
+  {
+    "id": "repair.plaster",
+    "parentId": "repair.walls",
+    "level": 2,
+    "order": 112,
+    "isLeaf": true,
+    "name": {
+      "kk": "Штукатурка",
+      "ru": "Plastering",
+      "en": [
+        "штукатур",
+        "сылақ"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "штукатурка"
+      ],
+      "ru": [
+        "plastering"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls",
+      "repair.plaster"
+    ]
+  },
+  {
+    "id": "repair.putty",
+    "parentId": "repair.walls",
+    "level": 2,
+    "order": 113,
+    "isLeaf": true,
+    "name": {
+      "kk": "Шпаклёвка",
+      "ru": "Puttying",
+      "en": [
+        "шпаклевка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "шпаклёвка"
+      ],
+      "ru": [
+        "putty",
+        "spackle"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls",
+      "repair.putty"
+    ]
+  },
+  {
+    "id": "repair.wallpaper",
+    "parentId": "repair.walls",
+    "level": 2,
+    "order": 114,
+    "isLeaf": true,
+    "name": {
+      "kk": "Поклейка обоев",
+      "ru": "Wallpapering",
+      "en": [
+        "обой"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "обои"
+      ],
+      "ru": [
+        "wallpaper"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls",
+      "repair.wallpaper"
+    ]
+  },
+  {
+    "id": "repair.decor_plaster",
+    "parentId": "repair.walls",
+    "level": 2,
+    "order": 115,
+    "isLeaf": true,
+    "name": {
+      "kk": "Декоративная штукатурка",
+      "ru": "Decorative plaster",
+      "en": [
+        "декор",
+        "сылақ"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "декоративная штукатурка"
+      ],
+      "ru": [
+        "decorative plaster"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls",
+      "repair.decor_plaster"
+    ]
+  },
+  {
+    "id": "repair.wall_panels",
+    "parentId": "repair.walls",
+    "level": 2,
+    "order": 116,
+    "isLeaf": true,
+    "name": {
+      "kk": "Стеновые панели",
+      "ru": "Wall panels",
+      "en": [
+        "панель",
+        "пвх панель"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "панели",
+        "пвх панели"
+      ],
+      "ru": [
+        "wall panels",
+        "pvc panels"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls",
+      "repair.wall_panels"
+    ]
+  },
+  {
+    "id": "repair.molding",
+    "parentId": "repair.walls",
+    "level": 2,
+    "order": 117,
+    "isLeaf": true,
+    "name": {
+      "kk": "Багет/молдинг",
+      "ru": "Molding",
+      "en": [
+        "молдинг",
+        "багет"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "молдинг",
+        "багет"
+      ],
+      "ru": [
+        "molding",
+        "cornice"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls",
+      "repair.molding"
+    ]
+  },
+  {
+    "id": "repair.crack_fix",
+    "parentId": "repair.walls",
+    "level": 2,
+    "order": 118,
+    "isLeaf": true,
+    "name": {
+      "kk": "Заделка трещин",
+      "ru": "Crack sealing",
+      "en": [
+        "жарық",
+        "трещина",
+        "сызық"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "трещины",
+        "заделка"
+      ],
+      "ru": [
+        "crack sealing",
+        "patching"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls",
+      "repair.crack_fix"
+    ]
+  },
+  {
+    "id": "repair.soundproofing",
+    "parentId": "repair.walls",
+    "level": 2,
+    "order": 119,
+    "isLeaf": true,
+    "name": {
+      "kk": "Шумоизоляция",
+      "ru": "Soundproofing",
+      "en": [
+        "дыбыс оқшаулау",
+        "шумо"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "шумоизоляция"
+      ],
+      "ru": [
+        "soundproofing",
+        "acoustic insulation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.walls",
+      "repair.soundproofing"
+    ]
+  },
+  {
+    "id": "repair.ceiling_stretch",
+    "parentId": "repair.ceilings",
+    "level": 2,
+    "order": 121,
+    "isLeaf": true,
+    "name": {
+      "kk": "Натяжной потолок",
+      "ru": "Stretch ceiling",
+      "en": [
+        "натяжной"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "натяжной"
+      ],
+      "ru": [
+        "stretch ceiling"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.ceilings",
+      "repair.ceiling_stretch"
+    ]
+  },
+  {
+    "id": "repair.ceiling_drywall",
+    "parentId": "repair.ceilings",
+    "level": 2,
+    "order": 122,
+    "isLeaf": true,
+    "name": {
+      "kk": "Потолок ГКЛ",
+      "ru": "Drywall ceiling",
+      "en": [
+        "гкл төбе"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "гкл потолок"
+      ],
+      "ru": [
+        "drywall ceiling"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.ceilings",
+      "repair.ceiling_drywall"
+    ]
+  },
+  {
+    "id": "repair.ceiling_painting",
+    "parentId": "repair.ceilings",
+    "level": 2,
+    "order": 123,
+    "isLeaf": true,
+    "name": {
+      "kk": "Покраска потолка",
+      "ru": "Ceiling painting",
+      "en": [
+        "төбе бояу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "покраска потолка"
+      ],
+      "ru": [
+        "ceiling painting"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.ceilings",
+      "repair.ceiling_painting"
+    ]
+  },
+  {
+    "id": "repair.ceiling_molding",
+    "parentId": "repair.ceilings",
+    "level": 2,
+    "order": 124,
+    "isLeaf": true,
+    "name": {
+      "kk": "Потолочный багет/карниз",
+      "ru": "Ceiling molding",
+      "en": [
+        "карниз",
+        "багет"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "карниз",
+        "багет"
+      ],
+      "ru": [
+        "ceiling molding",
+        "cornice"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.ceilings",
+      "repair.ceiling_molding"
+    ]
+  },
+  {
+    "id": "repair.ceiling_spot_prep",
+    "parentId": "repair.ceilings",
+    "level": 2,
+    "order": 125,
+    "isLeaf": true,
+    "name": {
+      "kk": "Подготовка под споты/свет",
+      "ru": "Lighting prep",
+      "en": [
+        "спот",
+        "жарық"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "споты",
+        "свет"
+      ],
+      "ru": [
+        "spotlight prep",
+        "lighting prep"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.ceilings",
+      "repair.ceiling_spot_prep"
+    ]
+  },
+  {
+    "id": "repair.floor_screed",
+    "parentId": "repair.floors",
+    "level": 2,
+    "order": 131,
+    "isLeaf": true,
+    "name": {
+      "kk": "Стяжка",
+      "ru": "Screed",
+      "en": [
+        "стяжка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "стяжка"
+      ],
+      "ru": [
+        "screed"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.floors",
+      "repair.floor_screed"
+    ]
+  },
+  {
+    "id": "repair.floor_leveling",
+    "parentId": "repair.floors",
+    "level": 2,
+    "order": 132,
+    "isLeaf": true,
+    "name": {
+      "kk": "Выравнивание пола",
+      "ru": "Floor leveling",
+      "en": [
+        "тегістеу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "выравнивание"
+      ],
+      "ru": [
+        "leveling"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.floors",
+      "repair.floor_leveling"
+    ]
+  },
+  {
+    "id": "repair.floor_laminate",
+    "parentId": "repair.floors",
+    "level": 2,
+    "order": 133,
+    "isLeaf": true,
+    "name": {
+      "kk": "Укладка ламината",
+      "ru": "Laminate laying",
+      "en": [
+        "ламинат"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ламинат"
+      ],
+      "ru": [
+        "laminate"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.floors",
+      "repair.floor_laminate"
+    ]
+  },
+  {
+    "id": "repair.floor_linoleum",
+    "parentId": "repair.floors",
+    "level": 2,
+    "order": 134,
+    "isLeaf": true,
+    "name": {
+      "kk": "Укладка линолеума",
+      "ru": "Linoleum laying",
+      "en": [
+        "линолеум"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "линолеум"
+      ],
+      "ru": [
+        "linoleum"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.floors",
+      "repair.floor_linoleum"
+    ]
+  },
+  {
+    "id": "repair.floor_parquet",
+    "parentId": "repair.floors",
+    "level": 2,
+    "order": 135,
+    "isLeaf": true,
+    "name": {
+      "kk": "Паркет",
+      "ru": "Parquet",
+      "en": [
+        "паркет"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "паркет"
+      ],
+      "ru": [
+        "parquet"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.floors",
+      "repair.floor_parquet"
+    ]
+  },
+  {
+    "id": "repair.floor_self_leveling",
+    "parentId": "repair.floors",
+    "level": 2,
+    "order": 136,
+    "isLeaf": true,
+    "name": {
+      "kk": "Наливной пол",
+      "ru": "Self-leveling floor",
+      "en": [
+        "наливной"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "наливной пол"
+      ],
+      "ru": [
+        "self-leveling floor"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.floors",
+      "repair.floor_self_leveling"
+    ]
+  },
+  {
+    "id": "repair.baseboard_install",
+    "parentId": "repair.floors",
+    "level": 2,
+    "order": 137,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка плинтуса",
+      "ru": "Baseboard install",
+      "en": [
+        "плинтус"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "плинтус"
+      ],
+      "ru": [
+        "baseboard"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.floors",
+      "repair.baseboard_install"
+    ]
+  },
+  {
+    "id": "repair.floor_tile",
+    "parentId": "repair.floors",
+    "level": 2,
+    "order": 138,
+    "isLeaf": true,
+    "name": {
+      "kk": "Плитка на пол",
+      "ru": "Floor tile",
+      "en": [
+        "еден плитка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "плитка на пол"
+      ],
+      "ru": [
+        "floor tile"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.floors",
+      "repair.floor_tile"
+    ]
+  },
+  {
+    "id": "repair.tile_laying",
+    "parentId": "repair.tiles",
+    "level": 2,
+    "order": 141,
+    "isLeaf": true,
+    "name": {
+      "kk": "Укладка плитки",
+      "ru": "Tile laying",
+      "en": [
+        "плитка",
+        "кафель"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "плитка",
+        "кафель"
+      ],
+      "ru": [
+        "tile laying",
+        "tiling"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.tiles",
+      "repair.tile_laying"
+    ]
+  },
+  {
+    "id": "repair.tile_grout",
+    "parentId": "repair.tiles",
+    "level": 2,
+    "order": 142,
+    "isLeaf": true,
+    "name": {
+      "kk": "Затирка",
+      "ru": "Grouting",
+      "en": [
+        "затирка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "затирка"
+      ],
+      "ru": [
+        "grouting",
+        "grout"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.tiles",
+      "repair.tile_grout"
+    ]
+  },
+  {
+    "id": "repair.tile_silicone",
+    "parentId": "repair.tiles",
+    "level": 2,
+    "order": 143,
+    "isLeaf": true,
+    "name": {
+      "kk": "Герметик/силикон",
+      "ru": "Silicone sealing",
+      "en": [
+        "силикон",
+        "герметик"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "силикон",
+        "герметик"
+      ],
+      "ru": [
+        "silicone",
+        "sealant"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.tiles",
+      "repair.tile_silicone"
+    ]
+  },
+  {
+    "id": "repair.bathroom_finish",
+    "parentId": "repair.tiles",
+    "level": 2,
+    "order": 144,
+    "isLeaf": true,
+    "name": {
+      "kk": "Отделка санузла (комплекс)",
+      "ru": "Bathroom finishing (full)",
+      "en": [
+        "санузел",
+        "ванна"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "санузел",
+        "ванная"
+      ],
+      "ru": [
+        "bathroom finishing"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.tiles",
+      "repair.bathroom_finish"
+    ]
+  },
+  {
+    "id": "repair.drywall_partition",
+    "parentId": "repair.drywall",
+    "level": 2,
+    "order": 151,
+    "isLeaf": true,
+    "name": {
+      "kk": "Перегородка ГКЛ",
+      "ru": "Drywall partition",
+      "en": [
+        "перегородка",
+        "гкл"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "перегородка гкл"
+      ],
+      "ru": [
+        "drywall partition"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.drywall",
+      "repair.drywall_partition"
+    ]
+  },
+  {
+    "id": "repair.drywall_box",
+    "parentId": "repair.drywall",
+    "level": 2,
+    "order": 152,
+    "isLeaf": true,
+    "name": {
+      "kk": "Короб (ГКЛ)",
+      "ru": "Drywall box",
+      "en": [
+        "қорап",
+        "короб"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "короб"
+      ],
+      "ru": [
+        "drywall box"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.drywall",
+      "repair.drywall_box"
+    ]
+  },
+  {
+    "id": "repair.drywall_niche",
+    "parentId": "repair.drywall",
+    "level": 2,
+    "order": 153,
+    "isLeaf": true,
+    "name": {
+      "kk": "Ниша/полка (ГКЛ)",
+      "ru": "Drywall niche/shelf",
+      "en": [
+        "ниша",
+        "полка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ниша",
+        "полка"
+      ],
+      "ru": [
+        "niche",
+        "shelf"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.drywall",
+      "repair.drywall_niche"
+    ]
+  },
+  {
+    "id": "repair.drywall_multi_level",
+    "parentId": "repair.drywall",
+    "level": 2,
+    "order": 154,
+    "isLeaf": true,
+    "name": {
+      "kk": "Многоуровневый ГКЛ",
+      "ru": "Multi-level drywall",
+      "en": [
+        "көпдеңгейлі"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "многоуровневый"
+      ],
+      "ru": [
+        "multi-level drywall"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.drywall",
+      "repair.drywall_multi_level"
+    ]
+  },
+  {
+    "id": "repair.varnish_lacquer",
+    "parentId": "repair.paintwork",
+    "level": 2,
+    "order": 161,
+    "isLeaf": true,
+    "name": {
+      "kk": "Лак/краска (дерево/металл)",
+      "ru": "Lacquer/paint (wood/metal)",
+      "en": [
+        "лак",
+        "эмаль"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "лак",
+        "эмаль"
+      ],
+      "ru": [
+        "lacquer",
+        "enamel"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.paintwork",
+      "repair.varnish_lacquer"
+    ]
+  },
+  {
+    "id": "repair.painting_doors_windows",
+    "parentId": "repair.paintwork",
+    "level": 2,
+    "order": 162,
+    "isLeaf": true,
+    "name": {
+      "kk": "Покраска дверей/окон",
+      "ru": "Door/window painting",
+      "en": [
+        "есік бояу",
+        "терезе бояу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "покраска дверей",
+        "покраска окон"
+      ],
+      "ru": [
+        "door painting",
+        "window painting"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.paintwork",
+      "repair.painting_doors_windows"
+    ]
+  },
+  {
+    "id": "repair.radiator_painting",
+    "parentId": "repair.paintwork",
+    "level": 2,
+    "order": 163,
+    "isLeaf": true,
+    "name": {
+      "kk": "Покраска радиаторов",
+      "ru": "Radiator painting",
+      "en": [
+        "радиатор бояу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "покраска радиаторов"
+      ],
+      "ru": [
+        "radiator painting"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.paintwork",
+      "repair.radiator_painting"
+    ]
+  },
+  {
+    "id": "repair.floor_waterproofing",
+    "parentId": "repair.waterproofing",
+    "level": 2,
+    "order": 171,
+    "isLeaf": true,
+    "name": {
+      "kk": "Гидроизоляция",
+      "ru": "Waterproofing",
+      "en": [
+        "гидроизоляция"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "гидроизоляция"
+      ],
+      "ru": [
+        "waterproofing"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.waterproofing",
+      "repair.floor_waterproofing"
+    ]
+  },
+  {
+    "id": "repair.floor_insulation",
+    "parentId": "repair.waterproofing",
+    "level": 2,
+    "order": 172,
+    "isLeaf": true,
+    "name": {
+      "kk": "Утепление пола",
+      "ru": "Floor insulation",
+      "en": [
+        "утепление",
+        "еден"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "утепление пола"
+      ],
+      "ru": [
+        "floor insulation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.waterproofing",
+      "repair.floor_insulation"
+    ]
+  },
+  {
+    "id": "repair.insulation_internal",
+    "parentId": "repair.waterproofing",
+    "level": 2,
+    "order": 173,
+    "isLeaf": true,
+    "name": {
+      "kk": "Утепление/изоляция внутри",
+      "ru": "Internal insulation",
+      "en": [
+        "ішкі утепление",
+        "оқшаулау"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "утепление внутри",
+        "изоляция"
+      ],
+      "ru": [
+        "internal insulation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "repair",
+      "repair.waterproofing",
+      "repair.insulation_internal"
+    ]
+  },
+  {
+    "id": "plumbing.toilet_install",
+    "parentId": "plumbing.install",
+    "level": 2,
+    "order": 211,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка унитаза",
+      "ru": "Toilet install",
+      "en": [
+        "унитаз"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "унитаз"
+      ],
+      "ru": [
+        "toilet"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install",
+      "plumbing.toilet_install"
+    ]
+  },
+  {
+    "id": "plumbing.sink_install",
+    "parentId": "plumbing.install",
+    "level": 2,
+    "order": 212,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка раковины",
+      "ru": "Sink install",
+      "en": [
+        "раковина"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "раковина"
+      ],
+      "ru": [
+        "sink"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install",
+      "plumbing.sink_install"
+    ]
+  },
+  {
+    "id": "plumbing.bath_shower_install",
+    "parentId": "plumbing.install",
+    "level": 2,
+    "order": 213,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка ванны/душа",
+      "ru": "Bath/shower install",
+      "en": [
+        "ванна",
+        "душ"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ванна",
+        "душ"
+      ],
+      "ru": [
+        "bath",
+        "shower"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install",
+      "plumbing.bath_shower_install"
+    ]
+  },
+  {
+    "id": "plumbing.shower_cabin_install",
+    "parentId": "plumbing.install",
+    "level": 2,
+    "order": 214,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка душевой кабины",
+      "ru": "Shower cabin install",
+      "en": [
+        "душ кабина"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "душевая кабина"
+      ],
+      "ru": [
+        "shower cabin"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install",
+      "plumbing.shower_cabin_install"
+    ]
+  },
+  {
+    "id": "plumbing.faucet_install",
+    "parentId": "plumbing.install",
+    "level": 2,
+    "order": 215,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка смесителя",
+      "ru": "Faucet install",
+      "en": [
+        "смеситель",
+        "кран"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "смеситель",
+        "кран"
+      ],
+      "ru": [
+        "faucet"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install",
+      "plumbing.faucet_install"
+    ]
+  },
+  {
+    "id": "plumbing.boiler_install",
+    "parentId": "plumbing.install",
+    "level": 2,
+    "order": 216,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка бойлера",
+      "ru": "Boiler install",
+      "en": [
+        "бойлер"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "бойлер"
+      ],
+      "ru": [
+        "boiler"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install",
+      "plumbing.boiler_install"
+    ]
+  },
+  {
+    "id": "plumbing.filter_install",
+    "parentId": "plumbing.install",
+    "level": 2,
+    "order": 217,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка фильтра воды",
+      "ru": "Water filter install",
+      "en": [
+        "фильтр"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "фильтр"
+      ],
+      "ru": [
+        "filter"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install",
+      "plumbing.filter_install"
+    ]
+  },
+  {
+    "id": "plumbing.washing_machine_connect",
+    "parentId": "plumbing.install",
+    "level": 2,
+    "order": 218,
+    "isLeaf": true,
+    "name": {
+      "kk": "Подключение стиральной машины",
+      "ru": "Washing machine hookup",
+      "en": [
+        "кір жуғыш",
+        "қосу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "стиральная машина",
+        "подключение"
+      ],
+      "ru": [
+        "washing machine",
+        "hookup"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install",
+      "plumbing.washing_machine_connect"
+    ]
+  },
+  {
+    "id": "plumbing.dishwasher_connect",
+    "parentId": "plumbing.install",
+    "level": 2,
+    "order": 219,
+    "isLeaf": true,
+    "name": {
+      "kk": "Подключение посудомоечной машины",
+      "ru": "Dishwasher hookup",
+      "en": [
+        "ыдыс жуғыш"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "посудомоечная",
+        "подключение"
+      ],
+      "ru": [
+        "dishwasher",
+        "hookup"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.install",
+      "plumbing.dishwasher_connect"
+    ]
+  },
+  {
+    "id": "plumbing.water_supply_piping",
+    "parentId": "plumbing.pipes",
+    "level": 2,
+    "order": 221,
+    "isLeaf": true,
+    "name": {
+      "kk": "Разводка водопровода",
+      "ru": "Water supply piping",
+      "en": [
+        "су құбыры"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "водопровод"
+      ],
+      "ru": [
+        "water supply"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.pipes",
+      "plumbing.water_supply_piping"
+    ]
+  },
+  {
+    "id": "plumbing.sewer_piping",
+    "parentId": "plumbing.pipes",
+    "level": 2,
+    "order": 222,
+    "isLeaf": true,
+    "name": {
+      "kk": "Разводка канализации",
+      "ru": "Sewer piping",
+      "en": [
+        "канализация"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "канализация"
+      ],
+      "ru": [
+        "sewer"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.pipes",
+      "plumbing.sewer_piping"
+    ]
+  },
+  {
+    "id": "plumbing.pipe_replacement",
+    "parentId": "plumbing.pipes",
+    "level": 2,
+    "order": 223,
+    "isLeaf": true,
+    "name": {
+      "kk": "Замена труб",
+      "ru": "Pipe replacement",
+      "en": [
+        "құбыр ауыстыру"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "замена труб"
+      ],
+      "ru": [
+        "pipe replacement"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.pipes",
+      "plumbing.pipe_replacement"
+    ]
+  },
+  {
+    "id": "plumbing.riser_replace",
+    "parentId": "plumbing.pipes",
+    "level": 2,
+    "order": 224,
+    "isLeaf": true,
+    "name": {
+      "kk": "Замена стояка",
+      "ru": "Riser replacement",
+      "en": [
+        "стояк"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "стояк"
+      ],
+      "ru": [
+        "riser"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.pipes",
+      "plumbing.riser_replace"
+    ]
+  },
+  {
+    "id": "plumbing.leak_fix",
+    "parentId": "plumbing.repair",
+    "level": 2,
+    "order": 231,
+    "isLeaf": true,
+    "name": {
+      "kk": "Устранение течи",
+      "ru": "Leak fix",
+      "en": [
+        "ағу",
+        "течь"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "течь"
+      ],
+      "ru": [
+        "leak"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.repair",
+      "plumbing.leak_fix"
+    ]
+  },
+  {
+    "id": "plumbing.blockage_unclog",
+    "parentId": "plumbing.repair",
+    "level": 2,
+    "order": 232,
+    "isLeaf": true,
+    "name": {
+      "kk": "Прочистка засора",
+      "ru": "Unclogging",
+      "en": [
+        "засор"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "засор"
+      ],
+      "ru": [
+        "clog"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.repair",
+      "plumbing.blockage_unclog"
+    ]
+  },
+  {
+    "id": "plumbing.toilet_repair",
+    "parentId": "plumbing.repair",
+    "level": 2,
+    "order": 233,
+    "isLeaf": true,
+    "name": {
+      "kk": "Ремонт унитаза",
+      "ru": "Toilet repair",
+      "en": [
+        "унитаз жөндеу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ремонт унитаза"
+      ],
+      "ru": [
+        "toilet repair"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.repair",
+      "plumbing.toilet_repair"
+    ]
+  },
+  {
+    "id": "plumbing.faucet_repair",
+    "parentId": "plumbing.repair",
+    "level": 2,
+    "order": 234,
+    "isLeaf": true,
+    "name": {
+      "kk": "Ремонт крана/смесителя",
+      "ru": "Faucet repair",
+      "en": [
+        "кран жөндеу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ремонт крана"
+      ],
+      "ru": [
+        "faucet repair"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.repair",
+      "plumbing.faucet_repair"
+    ]
+  },
+  {
+    "id": "plumbing.heated_floor_water",
+    "parentId": "plumbing.heating_water",
+    "level": 2,
+    "order": 241,
+    "isLeaf": true,
+    "name": {
+      "kk": "Тёплый пол (водяной)",
+      "ru": "Water heated floor",
+      "en": [
+        "жылы еден"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "тёплый пол"
+      ],
+      "ru": [
+        "heated floor"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.heating_water",
+      "plumbing.heated_floor_water"
+    ]
+  },
+  {
+    "id": "plumbing.radiator_install",
+    "parentId": "plumbing.heating_water",
+    "level": 2,
+    "order": 242,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка/замена радиатора",
+      "ru": "Radiator install/replace",
+      "en": [
+        "радиатор"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "радиатор"
+      ],
+      "ru": [
+        "radiator"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.heating_water",
+      "plumbing.radiator_install"
+    ]
+  },
+  {
+    "id": "plumbing.heating_pipes",
+    "parentId": "plumbing.heating_water",
+    "level": 2,
+    "order": 243,
+    "isLeaf": true,
+    "name": {
+      "kk": "Трубы отопления",
+      "ru": "Heating pipes",
+      "en": [
+        "жылыту құбыры"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "трубы отопления"
+      ],
+      "ru": [
+        "heating pipes"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "plumbing",
+      "plumbing.heating_water",
+      "plumbing.heating_pipes"
+    ]
+  },
+  {
+    "id": "electric.diagnostics",
+    "parentId": "electric.wiring",
+    "level": 2,
+    "order": 311,
+    "isLeaf": true,
+    "name": {
+      "kk": "Диагностика",
+      "ru": "Diagnostics",
+      "en": [
+        "диагностика"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "диагностика"
+      ],
+      "ru": [
+        "diagnostics"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.wiring",
+      "electric.diagnostics"
+    ]
+  },
+  {
+    "id": "electric.wire_install",
+    "parentId": "electric.wiring",
+    "level": 2,
+    "order": 312,
+    "isLeaf": true,
+    "name": {
+      "kk": "Прокладка/замена проводки",
+      "ru": "Wiring install/replace",
+      "en": [
+        "сым тарту",
+        "проводка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "проводка",
+        "замена"
+      ],
+      "ru": [
+        "wiring",
+        "replace"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.wiring",
+      "electric.wire_install"
+    ]
+  },
+  {
+    "id": "electric.hidden_wiring",
+    "parentId": "electric.wiring",
+    "level": 2,
+    "order": 313,
+    "isLeaf": true,
+    "name": {
+      "kk": "Скрытая проводка",
+      "ru": "Concealed wiring",
+      "en": [
+        "жасырын"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "скрытая"
+      ],
+      "ru": [
+        "concealed wiring"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.wiring",
+      "electric.hidden_wiring"
+    ]
+  },
+  {
+    "id": "electric.short_circuit_fix",
+    "parentId": "electric.wiring",
+    "level": 2,
+    "order": 314,
+    "isLeaf": true,
+    "name": {
+      "kk": "Устранение короткого замыкания",
+      "ru": "Short-circuit fix",
+      "en": [
+        "қысқа тұйықталу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "короткое замыкание"
+      ],
+      "ru": [
+        "short circuit"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.wiring",
+      "electric.short_circuit_fix"
+    ]
+  },
+  {
+    "id": "electric.socket_switch",
+    "parentId": "electric.lighting",
+    "level": 2,
+    "order": 321,
+    "isLeaf": true,
+    "name": {
+      "kk": "Розетки/выключатели",
+      "ru": "Sockets & switches",
+      "en": [
+        "розетка",
+        "выключатель"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "розетка",
+        "выключатель"
+      ],
+      "ru": [
+        "socket",
+        "switch"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.lighting",
+      "electric.socket_switch"
+    ]
+  },
+  {
+    "id": "electric.lighting_install",
+    "parentId": "electric.lighting",
+    "level": 2,
+    "order": 322,
+    "isLeaf": true,
+    "name": {
+      "kk": "Монтаж люстры/света",
+      "ru": "Lighting installation",
+      "en": [
+        "люстра",
+        "шам"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "люстра",
+        "свет"
+      ],
+      "ru": [
+        "lighting"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.lighting",
+      "electric.lighting_install"
+    ]
+  },
+  {
+    "id": "electric.led_strip",
+    "parentId": "electric.lighting",
+    "level": 2,
+    "order": 323,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка LED-ленты",
+      "ru": "LED strip install",
+      "en": [
+        "лед лента"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "лед лента"
+      ],
+      "ru": [
+        "led strip"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.lighting",
+      "electric.led_strip"
+    ]
+  },
+  {
+    "id": "electric.outdoor_lighting",
+    "parentId": "electric.lighting",
+    "level": 2,
+    "order": 324,
+    "isLeaf": true,
+    "name": {
+      "kk": "Наружное освещение",
+      "ru": "Outdoor lighting",
+      "en": [
+        "сыртқы жарық"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "наружное освещение"
+      ],
+      "ru": [
+        "outdoor lighting"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.lighting",
+      "electric.outdoor_lighting"
+    ]
+  },
+  {
+    "id": "electric.panel_assembly",
+    "parentId": "electric.panel",
+    "level": 2,
+    "order": 331,
+    "isLeaf": true,
+    "name": {
+      "kk": "Сборка щита",
+      "ru": "Panel assembly",
+      "en": [
+        "щиток"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "щит"
+      ],
+      "ru": [
+        "panel"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.panel",
+      "electric.panel_assembly"
+    ]
+  },
+  {
+    "id": "electric.breaker_replace",
+    "parentId": "electric.panel",
+    "level": 2,
+    "order": 332,
+    "isLeaf": true,
+    "name": {
+      "kk": "Замена автоматов",
+      "ru": "Breaker replacement",
+      "en": [
+        "автомат"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "автомат"
+      ],
+      "ru": [
+        "breaker"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.panel",
+      "electric.breaker_replace"
+    ]
+  },
+  {
+    "id": "electric.grounding",
+    "parentId": "electric.panel",
+    "level": 2,
+    "order": 333,
+    "isLeaf": true,
+    "name": {
+      "kk": "Заземление",
+      "ru": "Grounding",
+      "en": [
+        "заземление"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "заземление"
+      ],
+      "ru": [
+        "grounding"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.panel",
+      "electric.grounding"
+    ]
+  },
+  {
+    "id": "electric.intercom",
+    "parentId": "electric.low_voltage",
+    "level": 2,
+    "order": 341,
+    "isLeaf": true,
+    "name": {
+      "kk": "Домофон",
+      "ru": "Intercom",
+      "en": [
+        "домофон"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "домофон"
+      ],
+      "ru": [
+        "intercom"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.low_voltage",
+      "electric.intercom"
+    ]
+  },
+  {
+    "id": "electric.cctv_basic",
+    "parentId": "electric.low_voltage",
+    "level": 2,
+    "order": 342,
+    "isLeaf": true,
+    "name": {
+      "kk": "Видеонаблюдение (basic)",
+      "ru": "CCTV (basic)",
+      "en": [
+        "камера"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "камера",
+        "видеонаблюдение"
+      ],
+      "ru": [
+        "cctv",
+        "camera"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.low_voltage",
+      "electric.cctv_basic"
+    ]
+  },
+  {
+    "id": "electric.internet_cable",
+    "parentId": "electric.low_voltage",
+    "level": 2,
+    "order": 343,
+    "isLeaf": true,
+    "name": {
+      "kk": "Прокладка интернет/UTP кабеля",
+      "ru": "Internet (UTP) cabling",
+      "en": [
+        "интернет",
+        "кабель"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "интернет",
+        "кабель"
+      ],
+      "ru": [
+        "utp",
+        "ethernet"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.low_voltage",
+      "electric.internet_cable"
+    ]
+  },
+  {
+    "id": "electric.smart_home_basic",
+    "parentId": "electric.low_voltage",
+    "level": 2,
+    "order": 344,
+    "isLeaf": true,
+    "name": {
+      "kk": "Умный дом (basic)",
+      "ru": "Smart home (basic)",
+      "en": [
+        "смарт үй"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "умный дом"
+      ],
+      "ru": [
+        "smart home"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "electric",
+      "electric.low_voltage",
+      "electric.smart_home_basic"
+    ]
+  },
+  {
+    "id": "build.bricklaying",
+    "parentId": "build.masonry",
+    "level": 2,
+    "order": 411,
+    "isLeaf": true,
+    "name": {
+      "kk": "Кладка кирпича",
+      "ru": "Bricklaying",
+      "en": [
+        "кірпіш"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "кирпич"
+      ],
+      "ru": [
+        "bricklaying"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.masonry",
+      "build.bricklaying"
+    ]
+  },
+  {
+    "id": "build.gasblock_laying",
+    "parentId": "build.masonry",
+    "level": 2,
+    "order": 412,
+    "isLeaf": true,
+    "name": {
+      "kk": "Кладка газоблока",
+      "ru": "Aerated block laying",
+      "en": [
+        "газоблок"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "газоблок"
+      ],
+      "ru": [
+        "aerated block"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.masonry",
+      "build.gasblock_laying"
+    ]
+  },
+  {
+    "id": "build.cinderblock_laying",
+    "parentId": "build.masonry",
+    "level": 2,
+    "order": 413,
+    "isLeaf": true,
+    "name": {
+      "kk": "Кладка шлакоблока",
+      "ru": "Cinder block laying",
+      "en": [
+        "шлакоблок"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "шлакоблок"
+      ],
+      "ru": [
+        "cinder block"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.masonry",
+      "build.cinderblock_laying"
+    ]
+  },
+  {
+    "id": "build.partition_masonry",
+    "parentId": "build.masonry",
+    "level": 2,
+    "order": 414,
+    "isLeaf": true,
+    "name": {
+      "kk": "Кладка перегородок",
+      "ru": "Partition masonry",
+      "en": [
+        "перегородка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "перегородки"
+      ],
+      "ru": [
+        "partition"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.masonry",
+      "build.partition_masonry"
+    ]
+  },
+  {
+    "id": "build.concrete_pouring",
+    "parentId": "build.concrete",
+    "level": 2,
+    "order": 421,
+    "isLeaf": true,
+    "name": {
+      "kk": "Заливка бетона",
+      "ru": "Concrete pouring",
+      "en": [
+        "бетон құю"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "заливка бетона"
+      ],
+      "ru": [
+        "concrete pouring"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.concrete",
+      "build.concrete_pouring"
+    ]
+  },
+  {
+    "id": "build.foundation",
+    "parentId": "build.concrete",
+    "level": 2,
+    "order": 422,
+    "isLeaf": true,
+    "name": {
+      "kk": "Фундамент",
+      "ru": "Foundation",
+      "en": [
+        "іргетас",
+        "фундамент"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "фундамент"
+      ],
+      "ru": [
+        "foundation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.concrete",
+      "build.foundation"
+    ]
+  },
+  {
+    "id": "build.formwork",
+    "parentId": "build.concrete",
+    "level": 2,
+    "order": 423,
+    "isLeaf": true,
+    "name": {
+      "kk": "Опалубка",
+      "ru": "Formwork",
+      "en": [
+        "опалубка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "опалубка"
+      ],
+      "ru": [
+        "formwork"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.concrete",
+      "build.formwork"
+    ]
+  },
+  {
+    "id": "build.rebar",
+    "parentId": "build.concrete",
+    "level": 2,
+    "order": 424,
+    "isLeaf": true,
+    "name": {
+      "kk": "Вязка арматуры",
+      "ru": "Rebar tying",
+      "en": [
+        "арматура"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "арматура"
+      ],
+      "ru": [
+        "rebar"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.concrete",
+      "build.rebar"
+    ]
+  },
+  {
+    "id": "build.concrete_stairs",
+    "parentId": "build.concrete",
+    "level": 2,
+    "order": 425,
+    "isLeaf": true,
+    "name": {
+      "kk": "Бетонная лестница",
+      "ru": "Concrete stairs",
+      "en": [
+        "баспалдақ"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "лестница"
+      ],
+      "ru": [
+        "stairs"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.concrete",
+      "build.concrete_stairs"
+    ]
+  },
+  {
+    "id": "build.screed_heavy",
+    "parentId": "build.concrete",
+    "level": 2,
+    "order": 426,
+    "isLeaf": true,
+    "name": {
+      "kk": "Толстая стяжка (строит.)",
+      "ru": "Heavy screed",
+      "en": [
+        "қалың стяжка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "толстая стяжка"
+      ],
+      "ru": [
+        "heavy screed"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.concrete",
+      "build.screed_heavy"
+    ]
+  },
+  {
+    "id": "build.welding",
+    "parentId": "build.metal",
+    "level": 2,
+    "order": 431,
+    "isLeaf": true,
+    "name": {
+      "kk": "Сварщик",
+      "ru": "Welder",
+      "en": [
+        "сварка",
+        "сварщик"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "сварка",
+        "сварщик"
+      ],
+      "ru": [
+        "welder",
+        "welding"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.metal",
+      "build.welding"
+    ]
+  },
+  {
+    "id": "build.metal_structure_install",
+    "parentId": "build.metal",
+    "level": 2,
+    "order": 432,
+    "isLeaf": true,
+    "name": {
+      "kk": "Монтаж металлоконструкций",
+      "ru": "Metal structure install",
+      "en": [
+        "металл конструкция"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "металлоконструкции"
+      ],
+      "ru": [
+        "metal structures"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.metal",
+      "build.metal_structure_install"
+    ]
+  },
+  {
+    "id": "build.gates_fence",
+    "parentId": "build.metal",
+    "level": 2,
+    "order": 433,
+    "isLeaf": true,
+    "name": {
+      "kk": "Забор/ворота (металл)",
+      "ru": "Fence/gates (metal)",
+      "en": [
+        "ворота",
+        "қоршау"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ворота",
+        "забор"
+      ],
+      "ru": [
+        "gates",
+        "fence"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.metal",
+      "build.gates_fence"
+    ]
+  },
+  {
+    "id": "build.canopy",
+    "parentId": "build.metal",
+    "level": 2,
+    "order": 434,
+    "isLeaf": true,
+    "name": {
+      "kk": "Навес/козырёк",
+      "ru": "Canopy",
+      "en": [
+        "навес"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "навес"
+      ],
+      "ru": [
+        "canopy"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.metal",
+      "build.canopy"
+    ]
+  },
+  {
+    "id": "build.grill_brazier",
+    "parentId": "build.metal",
+    "level": 2,
+    "order": 435,
+    "isLeaf": true,
+    "name": {
+      "kk": "Мангал/печь (металл)",
+      "ru": "Brazier/metal stove",
+      "en": [
+        "мангал"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "мангал"
+      ],
+      "ru": [
+        "brazier"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.metal",
+      "build.grill_brazier"
+    ]
+  },
+  {
+    "id": "build.frame_house",
+    "parentId": "build.carpentry_struct",
+    "level": 2,
+    "order": 441,
+    "isLeaf": true,
+    "name": {
+      "kk": "Работы по каркасу дома",
+      "ru": "House framing",
+      "en": [
+        "каркас үй"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "каркас дома"
+      ],
+      "ru": [
+        "framing"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.carpentry_struct",
+      "build.frame_house"
+    ]
+  },
+  {
+    "id": "build.roof_truss",
+    "parentId": "build.carpentry_struct",
+    "level": 2,
+    "order": 442,
+    "isLeaf": true,
+    "name": {
+      "kk": "Стропила/обрешётка",
+      "ru": "Roof truss & lathing",
+      "en": [
+        "стропила",
+        "обрешетка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "стропила",
+        "обрешётка"
+      ],
+      "ru": [
+        "truss",
+        "lathing"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.carpentry_struct",
+      "build.roof_truss"
+    ]
+  },
+  {
+    "id": "build.dismantle_walls",
+    "parentId": "build.dismantle",
+    "level": 2,
+    "order": 451,
+    "isLeaf": true,
+    "name": {
+      "kk": "Демонтаж стен",
+      "ru": "Wall dismantling",
+      "en": [
+        "қабырға бұзу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "демонтаж стен"
+      ],
+      "ru": [
+        "wall dismantling"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.dismantle",
+      "build.dismantle_walls"
+    ]
+  },
+  {
+    "id": "build.dismantle_floor",
+    "parentId": "build.dismantle",
+    "level": 2,
+    "order": 452,
+    "isLeaf": true,
+    "name": {
+      "kk": "Демонтаж пола/стяжки",
+      "ru": "Floor dismantling",
+      "en": [
+        "еден бұзу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "демонтаж пола"
+      ],
+      "ru": [
+        "floor dismantling"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.dismantle",
+      "build.dismantle_floor"
+    ]
+  },
+  {
+    "id": "build.dismantle_tile",
+    "parentId": "build.dismantle",
+    "level": 2,
+    "order": 453,
+    "isLeaf": true,
+    "name": {
+      "kk": "Демонтаж плитки",
+      "ru": "Tile dismantling",
+      "en": [
+        "плитка бұзу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "демонтаж плитки"
+      ],
+      "ru": [
+        "tile dismantling"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.dismantle",
+      "build.dismantle_tile"
+    ]
+  },
+  {
+    "id": "build.debris_removal",
+    "parentId": "build.dismantle",
+    "level": 2,
+    "order": 454,
+    "isLeaf": true,
+    "name": {
+      "kk": "Вывоз строительного мусора",
+      "ru": "Construction debris removal",
+      "en": [
+        "қоқыс шығару"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "вывоз мусора"
+      ],
+      "ru": [
+        "debris removal"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.dismantle",
+      "build.debris_removal"
+    ]
+  },
+  {
+    "id": "build.scaffolding_assembly",
+    "parentId": "build.scaffolding",
+    "level": 2,
+    "order": 461,
+    "isLeaf": true,
+    "name": {
+      "kk": "Сборка строительных лесов",
+      "ru": "Scaffolding assembly",
+      "en": [
+        "леса"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "леса"
+      ],
+      "ru": [
+        "scaffolding"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "build",
+      "build.scaffolding",
+      "build.scaffolding_assembly"
+    ]
+  },
+  {
+    "id": "doors_windows.door_install",
+    "parentId": "doors_windows.doors",
+    "level": 2,
+    "order": 511,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка дверей",
+      "ru": "Door installation",
+      "en": [
+        "есік орнату"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "установка дверей"
+      ],
+      "ru": [
+        "door install"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.doors",
+      "doors_windows.door_install"
+    ]
+  },
+  {
+    "id": "doors_windows.door_repair",
+    "parentId": "doors_windows.doors",
+    "level": 2,
+    "order": 512,
+    "isLeaf": true,
+    "name": {
+      "kk": "Ремонт дверей",
+      "ru": "Door repair",
+      "en": [
+        "есік жөндеу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ремонт дверей"
+      ],
+      "ru": [
+        "door repair"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.doors",
+      "doors_windows.door_repair"
+    ]
+  },
+  {
+    "id": "doors_windows.door_trim",
+    "parentId": "doors_windows.doors",
+    "level": 2,
+    "order": 513,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка доборов/наличников",
+      "ru": "Door trim install",
+      "en": [
+        "наличник",
+        "добор"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "доборы",
+        "наличники"
+      ],
+      "ru": [
+        "door trim"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.doors",
+      "doors_windows.door_trim"
+    ]
+  },
+  {
+    "id": "doors_windows.window_install",
+    "parentId": "doors_windows.windows",
+    "level": 2,
+    "order": 521,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка ПВХ окон",
+      "ru": "PVC window install",
+      "en": [
+        "пвх терезе"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "пвх окна"
+      ],
+      "ru": [
+        "pvc windows"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.windows",
+      "doors_windows.window_install"
+    ]
+  },
+  {
+    "id": "doors_windows.window_adjust",
+    "parentId": "doors_windows.windows",
+    "level": 2,
+    "order": 522,
+    "isLeaf": true,
+    "name": {
+      "kk": "Регулировка/герметизация окон",
+      "ru": "Window adjustment/sealing",
+      "en": [
+        "реттеу",
+        "герметизация"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "регулировка",
+        "герметизация"
+      ],
+      "ru": [
+        "adjustment",
+        "sealing"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.windows",
+      "doors_windows.window_adjust"
+    ]
+  },
+  {
+    "id": "doors_windows.glass_replace",
+    "parentId": "doors_windows.windows",
+    "level": 2,
+    "order": 523,
+    "isLeaf": true,
+    "name": {
+      "kk": "Замена стеклопакета",
+      "ru": "Glass unit replacement",
+      "en": [
+        "стеклопакет"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "стеклопакет"
+      ],
+      "ru": [
+        "glass unit replacement"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.windows",
+      "doors_windows.glass_replace"
+    ]
+  },
+  {
+    "id": "doors_windows.lock_service",
+    "parentId": "doors_windows.hardware",
+    "level": 2,
+    "order": 531,
+    "isLeaf": true,
+    "name": {
+      "kk": "Замена/ремонт замков",
+      "ru": "Lock service",
+      "en": [
+        "құлып"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "замок"
+      ],
+      "ru": [
+        "lock service"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.hardware",
+      "doors_windows.lock_service"
+    ]
+  },
+  {
+    "id": "doors_windows.hinge_handle",
+    "parentId": "doors_windows.hardware",
+    "level": 2,
+    "order": 532,
+    "isLeaf": true,
+    "name": {
+      "kk": "Замена петель/ручек",
+      "ru": "Hinge/handle replacement",
+      "en": [
+        "ручка",
+        "ілмек"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "петли",
+        "ручки"
+      ],
+      "ru": [
+        "hinge",
+        "handle"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "doors_windows",
+      "doors_windows.hardware",
+      "doors_windows.hinge_handle"
+    ]
+  },
+  {
+    "id": "roof_facade.roof_install",
+    "parentId": "roof_facade.roof",
+    "level": 2,
+    "order": 611,
+    "isLeaf": true,
+    "name": {
+      "kk": "Монтаж кровли",
+      "ru": "Roof installation",
+      "en": [
+        "шатыр жабу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "монтаж кровли"
+      ],
+      "ru": [
+        "roof installation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.roof",
+      "roof_facade.roof_install"
+    ]
+  },
+  {
+    "id": "roof_facade.roof_repair",
+    "parentId": "roof_facade.roof",
+    "level": 2,
+    "order": 612,
+    "isLeaf": true,
+    "name": {
+      "kk": "Ремонт кровли",
+      "ru": "Roof repair",
+      "en": [
+        "шатыр жөндеу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ремонт кровли"
+      ],
+      "ru": [
+        "roof repair"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.roof",
+      "roof_facade.roof_repair"
+    ]
+  },
+  {
+    "id": "roof_facade.attic_finish",
+    "parentId": "roof_facade.roof",
+    "level": 2,
+    "order": 613,
+    "isLeaf": true,
+    "name": {
+      "kk": "Отделка мансарды",
+      "ru": "Attic finishing",
+      "en": [
+        "мансарда"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "мансарда"
+      ],
+      "ru": [
+        "attic finishing"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.roof",
+      "roof_facade.attic_finish"
+    ]
+  },
+  {
+    "id": "roof_facade.roof_insulation",
+    "parentId": "roof_facade.roof",
+    "level": 2,
+    "order": 614,
+    "isLeaf": true,
+    "name": {
+      "kk": "Утепление крыши",
+      "ru": "Roof insulation",
+      "en": [
+        "утепление"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "утепление"
+      ],
+      "ru": [
+        "roof insulation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.roof",
+      "roof_facade.roof_insulation"
+    ]
+  },
+  {
+    "id": "roof_facade.facade_finish",
+    "parentId": "roof_facade.facade",
+    "level": 2,
+    "order": 621,
+    "isLeaf": true,
+    "name": {
+      "kk": "Отделка фасада",
+      "ru": "Facade finishing",
+      "en": [
+        "фасад әрлеу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "отделка фасада"
+      ],
+      "ru": [
+        "facade finishing"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.facade",
+      "roof_facade.facade_finish"
+    ]
+  },
+  {
+    "id": "roof_facade.facade_insulation",
+    "parentId": "roof_facade.facade",
+    "level": 2,
+    "order": 622,
+    "isLeaf": true,
+    "name": {
+      "kk": "Утепление фасада",
+      "ru": "Facade insulation",
+      "en": [
+        "фасад утепление"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "утепление фасада"
+      ],
+      "ru": [
+        "facade insulation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.facade",
+      "roof_facade.facade_insulation"
+    ]
+  },
+  {
+    "id": "roof_facade.siding",
+    "parentId": "roof_facade.facade",
+    "level": 2,
+    "order": 623,
+    "isLeaf": true,
+    "name": {
+      "kk": "Монтаж сайдинга",
+      "ru": "Siding install",
+      "en": [
+        "сайдинг"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "сайдинг"
+      ],
+      "ru": [
+        "siding"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.facade",
+      "roof_facade.siding"
+    ]
+  },
+  {
+    "id": "roof_facade.decor_stone",
+    "parentId": "roof_facade.facade",
+    "level": 2,
+    "order": 624,
+    "isLeaf": true,
+    "name": {
+      "kk": "Декоративный камень",
+      "ru": "Decorative stone",
+      "en": [
+        "декор тас"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "декоративный камень"
+      ],
+      "ru": [
+        "decorative stone"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.facade",
+      "roof_facade.decor_stone"
+    ]
+  },
+  {
+    "id": "roof_facade.gutter_install",
+    "parentId": "roof_facade.gutters",
+    "level": 2,
+    "order": 631,
+    "isLeaf": true,
+    "name": {
+      "kk": "Монтаж водостока",
+      "ru": "Gutter install",
+      "en": [
+        "водосток"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "водосток"
+      ],
+      "ru": [
+        "gutter install"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.gutters",
+      "roof_facade.gutter_install"
+    ]
+  },
+  {
+    "id": "roof_facade.stormwater",
+    "parentId": "roof_facade.gutters",
+    "level": 2,
+    "order": 632,
+    "isLeaf": true,
+    "name": {
+      "kk": "Ливнёвка/водоотвод",
+      "ru": "Stormwater drainage",
+      "en": [
+        "ливневка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ливнёвка"
+      ],
+      "ru": [
+        "stormwater"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "roof_facade",
+      "roof_facade.gutters",
+      "roof_facade.stormwater"
+    ]
+  },
+  {
+    "id": "climate_heating.ac_install",
+    "parentId": "climate_heating.ac",
+    "level": 2,
+    "order": 711,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка кондиционера",
+      "ru": "AC installation",
+      "en": [
+        "кондиционер орнату"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "установка кондиционера"
+      ],
+      "ru": [
+        "ac installation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.ac",
+      "climate_heating.ac_install"
+    ]
+  },
+  {
+    "id": "climate_heating.ac_clean",
+    "parentId": "climate_heating.ac",
+    "level": 2,
+    "order": 712,
+    "isLeaf": true,
+    "name": {
+      "kk": "Чистка кондиционера",
+      "ru": "AC cleaning",
+      "en": [
+        "тазалау"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "чистка"
+      ],
+      "ru": [
+        "cleaning"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.ac",
+      "climate_heating.ac_clean"
+    ]
+  },
+  {
+    "id": "climate_heating.ac_repair",
+    "parentId": "climate_heating.ac",
+    "level": 2,
+    "order": 713,
+    "isLeaf": true,
+    "name": {
+      "kk": "Ремонт кондиционера",
+      "ru": "AC repair",
+      "en": [
+        "жөндеу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ремонт"
+      ],
+      "ru": [
+        "repair"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.ac",
+      "climate_heating.ac_repair"
+    ]
+  },
+  {
+    "id": "climate_heating.radiator_service",
+    "parentId": "climate_heating.heating",
+    "level": 2,
+    "order": 721,
+    "isLeaf": true,
+    "name": {
+      "kk": "Обслуживание радиаторов",
+      "ru": "Radiator service",
+      "en": [
+        "радиатор сервис"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "радиатор обслуживание"
+      ],
+      "ru": [
+        "radiator service"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.heating",
+      "climate_heating.radiator_service"
+    ]
+  },
+  {
+    "id": "climate_heating.boiler_install",
+    "parentId": "climate_heating.heating",
+    "level": 2,
+    "order": 722,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка котла",
+      "ru": "Boiler installation",
+      "en": [
+        "котел"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "котёл"
+      ],
+      "ru": [
+        "boiler install"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.heating",
+      "climate_heating.boiler_install"
+    ]
+  },
+  {
+    "id": "climate_heating.boiler_service",
+    "parentId": "climate_heating.heating",
+    "level": 2,
+    "order": 723,
+    "isLeaf": true,
+    "name": {
+      "kk": "Обслуживание котла",
+      "ru": "Boiler service",
+      "en": [
+        "котел сервис"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "обслуживание котла"
+      ],
+      "ru": [
+        "boiler service"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.heating",
+      "climate_heating.boiler_service"
+    ]
+  },
+  {
+    "id": "climate_heating.thermostat_install",
+    "parentId": "climate_heating.heating",
+    "level": 2,
+    "order": 724,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка термостата",
+      "ru": "Thermostat install",
+      "en": [
+        "термостат"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "термостат"
+      ],
+      "ru": [
+        "thermostat"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.heating",
+      "climate_heating.thermostat_install"
+    ]
+  },
+  {
+    "id": "climate_heating.vent_install",
+    "parentId": "climate_heating.vent",
+    "level": 2,
+    "order": 731,
+    "isLeaf": true,
+    "name": {
+      "kk": "Монтаж вентиляции",
+      "ru": "Ventilation install",
+      "en": [
+        "вентиляция монтаж"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "монтаж вентиляции"
+      ],
+      "ru": [
+        "ventilation install"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.vent",
+      "climate_heating.vent_install"
+    ]
+  },
+  {
+    "id": "climate_heating.vent_clean",
+    "parentId": "climate_heating.vent",
+    "level": 2,
+    "order": 732,
+    "isLeaf": true,
+    "name": {
+      "kk": "Чистка вентканалов",
+      "ru": "Vent duct cleaning",
+      "en": [
+        "вентканал тазалау"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "чистка вентканалов"
+      ],
+      "ru": [
+        "duct cleaning"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "climate_heating",
+      "climate_heating.vent",
+      "climate_heating.vent_clean"
+    ]
+  },
+  {
+    "id": "wood_furniture.carpentry_general",
+    "parentId": "wood_furniture.wood",
+    "level": 2,
+    "order": 811,
+    "isLeaf": true,
+    "name": {
+      "kk": "Плотник (общее)",
+      "ru": "Carpenter (general)",
+      "en": [
+        "плотник"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "плотник"
+      ],
+      "ru": [
+        "carpenter"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.wood",
+      "wood_furniture.carpentry_general"
+    ]
+  },
+  {
+    "id": "wood_furniture.baseboard_trim",
+    "parentId": "wood_furniture.wood",
+    "level": 2,
+    "order": 812,
+    "isLeaf": true,
+    "name": {
+      "kk": "Плинтус/наличники",
+      "ru": "Baseboard/trim",
+      "en": [
+        "наличник",
+        "плинтус"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "наличники",
+        "плинтус"
+      ],
+      "ru": [
+        "trim",
+        "baseboard"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.wood",
+      "wood_furniture.baseboard_trim"
+    ]
+  },
+  {
+    "id": "wood_furniture.shelves_install",
+    "parentId": "wood_furniture.wood",
+    "level": 2,
+    "order": 813,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка полок",
+      "ru": "Shelves install",
+      "en": [
+        "полка",
+        "сөре"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "полки"
+      ],
+      "ru": [
+        "shelves"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.wood",
+      "wood_furniture.shelves_install"
+    ]
+  },
+  {
+    "id": "wood_furniture.furniture_assembly",
+    "parentId": "wood_furniture.furniture",
+    "level": 2,
+    "order": 821,
+    "isLeaf": true,
+    "name": {
+      "kk": "Сборка мебели",
+      "ru": "Furniture assembly",
+      "en": [
+        "жиһаз жинау"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "сборка мебели"
+      ],
+      "ru": [
+        "furniture assembly"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.furniture",
+      "wood_furniture.furniture_assembly"
+    ]
+  },
+  {
+    "id": "wood_furniture.furniture_repair",
+    "parentId": "wood_furniture.furniture",
+    "level": 2,
+    "order": 822,
+    "isLeaf": true,
+    "name": {
+      "kk": "Ремонт мебели",
+      "ru": "Furniture repair",
+      "en": [
+        "жиһаз жөндеу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ремонт мебели"
+      ],
+      "ru": [
+        "furniture repair"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.furniture",
+      "wood_furniture.furniture_repair"
+    ]
+  },
+  {
+    "id": "wood_furniture.wardrobe_install",
+    "parentId": "wood_furniture.furniture",
+    "level": 2,
+    "order": 823,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка шкафа/купе",
+      "ru": "Wardrobe install",
+      "en": [
+        "шкаф",
+        "купе"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "шкаф",
+        "купе"
+      ],
+      "ru": [
+        "wardrobe"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.furniture",
+      "wood_furniture.wardrobe_install"
+    ]
+  },
+  {
+    "id": "wood_furniture.kitchen_install",
+    "parentId": "wood_furniture.kitchens",
+    "level": 2,
+    "order": 831,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка кухни",
+      "ru": "Kitchen install",
+      "en": [
+        "асүй"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "кухня установка"
+      ],
+      "ru": [
+        "kitchen install"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.kitchens",
+      "wood_furniture.kitchen_install"
+    ]
+  },
+  {
+    "id": "wood_furniture.countertop_install",
+    "parentId": "wood_furniture.kitchens",
+    "level": 2,
+    "order": 832,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка столешницы",
+      "ru": "Countertop install",
+      "en": [
+        "столешница"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "столешница"
+      ],
+      "ru": [
+        "countertop"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "wood_furniture",
+      "wood_furniture.kitchens",
+      "wood_furniture.countertop_install"
+    ]
+  },
+  {
+    "id": "outdoor.paving_blocks",
+    "parentId": "outdoor.paving",
+    "level": 2,
+    "order": 911,
+    "isLeaf": true,
+    "name": {
+      "kk": "Укладка брусчатки",
+      "ru": "Paving blocks",
+      "en": [
+        "брусчатка"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "брусчатка"
+      ],
+      "ru": [
+        "paving blocks"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.paving",
+      "outdoor.paving_blocks"
+    ]
+  },
+  {
+    "id": "outdoor.concrete_walkway",
+    "parentId": "outdoor.paving",
+    "level": 2,
+    "order": 912,
+    "isLeaf": true,
+    "name": {
+      "kk": "Бетонная дорожка/площадка",
+      "ru": "Concrete walkway",
+      "en": [
+        "бетон жол",
+        "алаң"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "бетонная дорожка",
+        "площадка"
+      ],
+      "ru": [
+        "concrete walkway"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.paving",
+      "outdoor.concrete_walkway"
+    ]
+  },
+  {
+    "id": "outdoor.curbstone",
+    "parentId": "outdoor.paving",
+    "level": 2,
+    "order": 913,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка бордюров",
+      "ru": "Curbstone install",
+      "en": [
+        "бордюр"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "бордюр"
+      ],
+      "ru": [
+        "curb"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.paving",
+      "outdoor.curbstone"
+    ]
+  },
+  {
+    "id": "outdoor.fence_install",
+    "parentId": "outdoor.fence",
+    "level": 2,
+    "order": 921,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка забора",
+      "ru": "Fence install",
+      "en": [
+        "қоршау"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "забор"
+      ],
+      "ru": [
+        "fence install"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.fence",
+      "outdoor.fence_install"
+    ]
+  },
+  {
+    "id": "outdoor.gate_install",
+    "parentId": "outdoor.fence",
+    "level": 2,
+    "order": 922,
+    "isLeaf": true,
+    "name": {
+      "kk": "Установка ворот",
+      "ru": "Gate install",
+      "en": [
+        "қақпа",
+        "ворота"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "ворота"
+      ],
+      "ru": [
+        "gate install"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.fence",
+      "outdoor.gate_install"
+    ]
+  },
+  {
+    "id": "outdoor.foundation_for_fence",
+    "parentId": "outdoor.fence",
+    "level": 2,
+    "order": 923,
+    "isLeaf": true,
+    "name": {
+      "kk": "Фундамент под забор",
+      "ru": "Fence foundation",
+      "en": [
+        "забор фундамент"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "фундамент забора"
+      ],
+      "ru": [
+        "fence foundation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.fence",
+      "outdoor.foundation_for_fence"
+    ]
+  },
+  {
+    "id": "outdoor.drainage_install",
+    "parentId": "outdoor.drainage",
+    "level": 2,
+    "order": 931,
+    "isLeaf": true,
+    "name": {
+      "kk": "Устройство дренажа",
+      "ru": "Drainage installation",
+      "en": [
+        "дренаж"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "дренаж"
+      ],
+      "ru": [
+        "drainage installation"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.drainage",
+      "outdoor.drainage_install"
+    ]
+  },
+  {
+    "id": "outdoor.septic_pit",
+    "parentId": "outdoor.drainage",
+    "level": 2,
+    "order": 932,
+    "isLeaf": true,
+    "name": {
+      "kk": "Септик/выгребная яма",
+      "ru": "Septic pit",
+      "en": [
+        "септик",
+        "шұңқыр"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "септик",
+        "яма"
+      ],
+      "ru": [
+        "septic"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.drainage",
+      "outdoor.septic_pit"
+    ]
+  },
+  {
+    "id": "outdoor.landscape_leveling",
+    "parentId": "outdoor.landscape",
+    "level": 2,
+    "order": 941,
+    "isLeaf": true,
+    "name": {
+      "kk": "Планировка участка",
+      "ru": "Site leveling",
+      "en": [
+        "жер тегістеу"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "планировка"
+      ],
+      "ru": [
+        "site leveling"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.landscape",
+      "outdoor.landscape_leveling"
+    ]
+  },
+  {
+    "id": "outdoor.snow_removal",
+    "parentId": "outdoor.landscape",
+    "level": 2,
+    "order": 942,
+    "isLeaf": true,
+    "name": {
+      "kk": "Уборка снега",
+      "ru": "Snow removal",
+      "en": [
+        "қар тазалау"
+      ]
+    },
+    "aliases": {
+      "kk": [],
+      "ru": [],
+      "en": []
+    },
+    "keywords": {
+      "kk": [
+        "уборка снега"
+      ],
+      "ru": [
+        "snow removal"
+      ],
+      "en": []
+    },
+    "pathIds": [
+      "outdoor",
+      "outdoor.landscape",
+      "outdoor.snow_removal"
+    ]
+  }
+]

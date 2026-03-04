@@ -1,0 +1,51 @@
+name: kuryl_kz
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cached_network_image: ^3.3.1
+  
+  # Негізгі пакеттер
+  lucide_icons: ^0.257.0
+  flutter_animate: ^4.5.0
+  cupertino_icons: ^1.0.8
+  provider: ^6.0.0
+  connectivity_plus: ^5.0.2
+  record: ^6.1.2
+  just_audio: ^0.9.38
+  
+  # Firebase
+  firebase_core: ^4.4.0
+  firebase_auth: ^6.1.4
+  cloud_firestore: ^6.1.2
+  firebase_storage: ^13.0.6
+  
+  # Суреттермен жұмыс
+  image_picker: ^1.2.1
+  flutter_image_compress: ^2.4.0
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/locations/kz_locations.json
+    - assets/data/kato/naqusta_kato_selected_multilang_flat.json
+    - assets/data/kato/naqusta_kato_selected_multilang_tree.json
+    # Category system source of truth loaded via CategoryRepository.
+    - assets/data/categories/categories_flat.json

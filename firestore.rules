@@ -1,0 +1,680 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function uid() {
+      return request.auth.uid;
+    }
+
+    function isClient() {
+      return isSignedIn() &&
+          exists(/databases/$(database)/documents/users/$(uid())) &&
+          (
+            !get(/databases/$(database)/documents/users/$(uid())).data.keys().hasAny([
+              'role',
+            ]) ||
+            get(/databases/$(database)/documents/users/$(uid())).data.role ==
+                'client'
+          );
+    }
+
+    function isWorker() {
+      return isSignedIn() &&
+          exists(/databases/$(database)/documents/workers/$(uid()));
+    }
+
+    function validOrderId(orderId) {
+      return orderId is string && orderId.size() > 0;
+    }
+
+    function orderRef(orderId) {
+      return /databases/$(database)/documents/orders/$(orderId);
+    }
+
+    function orderExists(orderId) {
+      return validOrderId(orderId) && exists(orderRef(orderId));
+    }
+
+    function orderClient(orderId) {
+      return orderExists(orderId)
+          ? get(orderRef(orderId)).data.clientId
+          : null;
+    }
+
+    function orderWorker(orderId) {
+      return orderExists(orderId)
+          ? get(orderRef(orderId)).data.acceptedWorkerId
+          : null;
+    }
+
+    function orderStatus(orderId) {
+      return orderExists(orderId)
+          ? get(orderRef(orderId)).data.status
+          : null;
+    }
+
+    function isOrderClient(orderId) {
+      return isSignedIn() && orderClient(orderId) == uid();
+    }
+
+    function isOrderAcceptedWorker(orderId) {
+      return isSignedIn() && orderWorker(orderId) == uid();
+    }
+
+    function isChatMember(chatData) {
+      return isSignedIn() &&
+          (chatData.clientId == uid() || chatData.workerId == uid());
+    }
+
+    function isOrderOwnerActor() {
+      return isSignedIn() && resource.data.clientId == uid();
+    }
+
+    function isAcceptedWorkerOrderActor() {
+      return isSignedIn() && resource.data.acceptedWorkerId == uid();
+    }
+
+    function orderCategoryPathLooksLeaf(pathIds, categoryId, rootId) {
+      return pathIds is list &&
+          pathIds.size() >= 3 &&
+          pathIds[0] is string &&
+          pathIds[pathIds.size() - 1] is string &&
+          pathIds[0] == rootId &&
+          pathIds[pathIds.size() - 1] == categoryId;
+    }
+
+    function validOrderCategoryOnCreate() {
+      return request.resource.data.categoryId is string &&
+          request.resource.data.categoryId.size() > 0 &&
+          request.resource.data.categoryName is string &&
+          request.resource.data.categoryName.size() > 0 &&
+          request.resource.data.categoryRootId is string &&
+          request.resource.data.categoryRootId.size() > 0 &&
+          orderCategoryPathLooksLeaf(
+            request.resource.data.categoryPathIds,
+            request.resource.data.categoryId,
+            request.resource.data.categoryRootId,
+          );
+    }
+
+    // Immutable order fields: must never change after create.
+    function orderImmutableFieldsUnchanged() {
+      return request.resource.data.clientId == resource.data.clientId &&
+          request.resource.data.createdAt == resource.data.createdAt;
+    }
+
+    // Client can edit draft content only while OPEN.
+    function clientEditsOpenOrderDraft() {
+      let changed = request.resource.data.diff(resource.data).changedKeys();
+      return isOrderOwnerActor() &&
+          resource.data.status == 'OPEN' &&
+          request.resource.data.status == 'OPEN' &&
+          request.resource.data.acceptedWorkerId == null &&
+          changed.hasOnly([
+            'title',
+            'description',
+            'budgetPrice',
+            'negotiable',
+            'locationShort',
+            'photos',
+            'updatedAt',
+          ]) &&
+          (
+            !changed.hasAny(['updatedAt']) ||
+            request.resource.data.updatedAt is timestamp
+          );
+    }
+
+    // OPEN -> IN_PROGRESS only via client accept-worker flow.
+    function clientAcceptsWorkerOnOpenOrder() {
+      let changed = request.resource.data.diff(resource.data).changedKeys();
+      return isOrderOwnerActor() &&
+          resource.data.status == 'OPEN' &&
+          request.resource.data.status == 'IN_PROGRESS' &&
+          resource.data.acceptedWorkerId == null &&
+          request.resource.data.acceptedWorkerId is string &&
+          request.resource.data.acceptedWorkerId.size() > 0 &&
+          request.resource.data.doneByWorker == false &&
+          request.resource.data.doneByClient == false &&
+          request.resource.data.cancelledBy == null &&
+          request.resource.data.cancelReason == null &&
+          request.resource.data.offerWorkerIds is list &&
+          request.resource.data.offerWorkerIds.hasAll([
+            request.resource.data.acceptedWorkerId,
+          ]) &&
+          request.resource.data.offersCount is int &&
+          request.resource.data.offersCount ==
+              request.resource.data.offerWorkerIds.size() &&
+          request.resource.data.updatedAt is timestamp &&
+          changed.hasOnly([
+            'status',
+            'acceptedWorkerId',
+            'doneByWorker',
+            'doneByClient',
+            'cancelledBy',
+            'cancelReason',
+            'offerWorkerIds',
+            'offersCount',
+            'updatedAt',
+          ]);
+    }
+
+    // Client confirmation in IN_PROGRESS/COMPLETED path.
+    function clientMarksOrderDoneUpdate() {
+      let changed = request.resource.data.diff(resource.data).changedKeys();
+      return isOrderOwnerActor() &&
+          (
+            resource.data.status == 'IN_PROGRESS' ||
+            resource.data.status == 'COMPLETED'
+          ) &&
+          request.resource.data.doneByClient == true &&
+          request.resource.data.status ==
+              (
+                resource.data.doneByWorker == true
+                  ? 'COMPLETED'
+                  : 'IN_PROGRESS'
+              ) &&
+          request.resource.data.updatedAt is timestamp &&
+          changed.hasOnly(['doneByClient', 'status', 'updatedAt']);
+    }
+
+    function clientCancelsOpenOrderUpdate() {
+      let changed = request.resource.data.diff(resource.data).changedKeys();
+      return isOrderOwnerActor() &&
+          resource.data.status == 'OPEN' &&
+          request.resource.data.status == 'CANCELLED' &&
+          request.resource.data.cancelledBy == 'client' &&
+          request.resource.data.cancelReason is string &&
+          request.resource.data.cancelledAt is timestamp &&
+          request.resource.data.updatedAt is timestamp &&
+          changed.hasOnly([
+            'status',
+            'cancelledBy',
+            'cancelReason',
+            'cancelledAt',
+            'updatedAt',
+          ]);
+    }
+
+    function clientCancelsInProgressOrderUpdate() {
+      let changed = request.resource.data.diff(resource.data).changedKeys();
+      return isOrderOwnerActor() &&
+          resource.data.status == 'IN_PROGRESS' &&
+          request.resource.data.status == 'CANCELLED' &&
+          request.resource.data.cancelledBy == 'client' &&
+          request.resource.data.cancelReason is string &&
+          request.resource.data.cancelReason.size() > 0 &&
+          request.resource.data.cancelledAt is timestamp &&
+          request.resource.data.updatedAt is timestamp &&
+          changed.hasOnly([
+            'status',
+            'cancelledBy',
+            'cancelReason',
+            'cancelledAt',
+            'updatedAt',
+          ]);
+    }
+
+    // Client marks review timestamp after completion (single marker update).
+    function clientSetsReviewCreatedAtUpdate() {
+      let changed = request.resource.data.diff(resource.data).changedKeys();
+      return isOrderOwnerActor() &&
+          resource.data.status == 'COMPLETED' &&
+          request.resource.data.reviewCreatedAt is timestamp &&
+          request.resource.data.updatedAt is timestamp &&
+          (
+            !resource.data.keys().hasAny(['reviewCreatedAt']) ||
+            resource.data.reviewCreatedAt == null
+          ) &&
+          changed.hasOnly(['reviewCreatedAt', 'updatedAt']);
+    }
+
+    // Accepted worker can only mark own progress and completion status.
+    function workerMarksOrderDoneUpdate() {
+      let changed = request.resource.data.diff(resource.data).changedKeys();
+      return isAcceptedWorkerOrderActor() &&
+          (
+            resource.data.status == 'IN_PROGRESS' ||
+            resource.data.status == 'COMPLETED'
+          ) &&
+          request.resource.data.doneByWorker == true &&
+          request.resource.data.status ==
+              (
+                resource.data.doneByClient == true
+                  ? 'COMPLETED'
+                  : 'IN_PROGRESS'
+              ) &&
+          request.resource.data.updatedAt is timestamp &&
+          changed.hasOnly(['doneByWorker', 'status', 'updatedAt']);
+    }
+
+    // Accepted worker can cancel only IN_PROGRESS order with reason.
+    function workerCancelsInProgressOrderUpdate() {
+      let changed = request.resource.data.diff(resource.data).changedKeys();
+      return isAcceptedWorkerOrderActor() &&
+          resource.data.status == 'IN_PROGRESS' &&
+          request.resource.data.status == 'CANCELLED' &&
+          request.resource.data.cancelledBy == 'worker' &&
+          request.resource.data.cancelReason is string &&
+          request.resource.data.cancelReason.size() > 0 &&
+          request.resource.data.cancelledAt is timestamp &&
+          request.resource.data.updatedAt is timestamp &&
+          changed.hasOnly([
+            'status',
+            'cancelledBy',
+            'cancelReason',
+            'cancelledAt',
+            'updatedAt',
+          ]);
+    }
+
+    // Worker can update OPEN order offer counters only for own offer visibility.
+    // This keeps offer create flow compatible without allowing broader order edits.
+    function workerUpdatesOpenOrderOfferCounters() {
+      let changed = request.resource.data.diff(resource.data).changedKeys();
+      let alreadyOffered = resource.data.offerWorkerIds.hasAny([uid()]);
+      let currentCount = resource.data.offerWorkerIds.size();
+      let nextCount = request.resource.data.offerWorkerIds.size();
+
+      return isSignedIn() &&
+          isWorker() &&
+          resource.data.status == 'OPEN' &&
+          request.resource.data.status == 'OPEN' &&
+          resource.data.acceptedWorkerId == null &&
+          request.resource.data.acceptedWorkerId == null &&
+          request.resource.data.doneByWorker == resource.data.doneByWorker &&
+          request.resource.data.doneByClient == resource.data.doneByClient &&
+          request.resource.data.cancelledBy == resource.data.cancelledBy &&
+          request.resource.data.cancelReason == resource.data.cancelReason &&
+          request.resource.data.offerWorkerIds is list &&
+          request.resource.data.offersCount is int &&
+          request.resource.data.offersCount == nextCount &&
+          request.resource.data.updatedAt is timestamp &&
+          changed.hasOnly(['offerWorkerIds', 'offersCount', 'updatedAt']) &&
+          request.resource.data.offerWorkerIds.hasAll(resource.data.offerWorkerIds) &&
+          (
+            (
+              alreadyOffered &&
+              nextCount == currentCount &&
+              request.resource.data.offerWorkerIds.hasAll([uid()])
+            ) ||
+            (
+              !alreadyOffered &&
+              nextCount == currentCount + 1 &&
+              request.resource.data.offerWorkerIds.hasAll([uid()])
+            )
+          );
+    }
+
+    match /users/{userId} {
+      allow read: if isSignedIn() && uid() == userId;
+
+      allow create: if isSignedIn() &&
+          uid() == userId &&
+          (
+            (
+              request.resource.data.role == 'client' &&
+              !exists(/databases/$(database)/documents/workers/$(userId))
+            ) ||
+            (
+              request.resource.data.role == 'worker' &&
+              existsAfter(/databases/$(database)/documents/workers/$(userId))
+            )
+          );
+
+      allow update: if isSignedIn() &&
+          uid() == userId &&
+          (
+            resource.data.role == 'client' ||
+            resource.data.role == 'worker'
+          ) &&
+          request.resource.data.role == resource.data.role;
+
+      allow delete: if isSignedIn() && uid() == userId;
+    }
+
+    match /public_profiles/{userId} {
+      allow read: if isSignedIn();
+
+      allow create, update: if isSignedIn() &&
+          uid() == userId &&
+          request.resource.data.keys().hasAll([
+            'displayName',
+            'avatarUrl',
+            'updatedAt',
+          ]) &&
+          request.resource.data.keys().hasOnly([
+            'displayName',
+            'avatarUrl',
+            'updatedAt',
+          ]) &&
+          request.resource.data.displayName is string &&
+          request.resource.data.avatarUrl is string &&
+          request.resource.data.updatedAt is timestamp;
+
+      allow delete: if isSignedIn() && uid() == userId;
+    }
+
+    match /workers/{workerId} {
+      allow read: if isSignedIn() && uid() == workerId;
+
+      allow create: if isSignedIn() &&
+          uid() == workerId &&
+          request.resource.data.role == 'worker' &&
+          (
+            !exists(/databases/$(database)/documents/users/$(workerId)) ||
+            get(/databases/$(database)/documents/users/$(workerId)).data.role ==
+                'worker'
+          );
+
+      allow update: if isSignedIn() &&
+          uid() == workerId &&
+          resource.data.role == 'worker' &&
+          request.resource.data.role == resource.data.role;
+
+      allow delete: if isSignedIn() && uid() == workerId;
+    }
+
+    match /orders/{orderId} {
+      allow create: if isClient() &&
+          request.resource.data.clientId == uid() &&
+          request.resource.data.status == 'OPEN' &&
+          validOrderCategoryOnCreate();
+
+      allow read: if isSignedIn() &&
+          (
+            resource.data.clientId == uid() ||
+            resource.data.acceptedWorkerId == uid() ||
+            (isWorker() && resource.data.status == 'OPEN')
+          );
+
+      // Update matrix:
+      // - Client + OPEN: edit draft fields OR accept worker OR cancel order.
+      // - Client + IN_PROGRESS: confirm done OR cancel order.
+      // - Client + COMPLETED: set reviewCreatedAt marker.
+      // - Accepted worker + IN_PROGRESS/COMPLETED: mark done.
+      // - Accepted worker + IN_PROGRESS: cancel order with reason.
+      allow update: if isSignedIn() &&
+          orderImmutableFieldsUnchanged() &&
+          (
+            clientEditsOpenOrderDraft() ||
+            clientAcceptsWorkerOnOpenOrder() ||
+            clientMarksOrderDoneUpdate() ||
+            clientCancelsOpenOrderUpdate() ||
+            clientCancelsInProgressOrderUpdate() ||
+            clientSetsReviewCreatedAtUpdate() ||
+            workerMarksOrderDoneUpdate() ||
+            workerCancelsInProgressOrderUpdate() ||
+            workerUpdatesOpenOrderOfferCounters()
+          );
+
+      allow delete: if isSignedIn() && resource.data.clientId == uid();
+    }
+
+    match /offers/{offerId} {
+      allow read: if isSignedIn() &&
+          (
+            resource.data.workerId == uid() ||
+            isOrderClient(resource.data.orderId)
+          );
+
+      allow create: if isWorker() &&
+          request.resource.data.workerId == uid() &&
+          orderStatus(request.resource.data.orderId) == 'OPEN';
+
+      allow update: if isSignedIn() &&
+          request.resource.data.workerId == resource.data.workerId &&
+          request.resource.data.orderId == resource.data.orderId &&
+          (
+            (
+              isWorker() &&
+              resource.data.workerId == uid() &&
+              orderStatus(resource.data.orderId) == 'OPEN'
+            ) ||
+            isOrderClient(resource.data.orderId)
+          );
+
+      allow delete: if false;
+    }
+
+    match /chats/{chatId} {
+      function participantsValid() {
+        return request.resource.data.participants is list &&
+            request.resource.data.participants.size() == 2 &&
+            request.resource.data.participants.hasAll([
+              request.resource.data.clientId,
+              request.resource.data.workerId,
+            ]);
+      }
+
+      function validChatCreateShape() {
+        return request.resource.data.keys().hasAll([
+              'orderId',
+              'clientId',
+              'workerId',
+              'participants',
+              'createdAt',
+            ]) &&
+            request.resource.data.keys().hasOnly([
+              'orderId',
+              'clientId',
+              'workerId',
+              'participants',
+              'createdAt',
+              'updatedAt',
+              'lastMessage',
+              'lastMessageType',
+              'lastSenderId',
+              'lastMessageAt',
+              'clientName',
+              'clientAvatarUrl',
+              'workerName',
+              'workerAvatarUrl',
+            ]) &&
+            request.resource.data.orderId is string &&
+            request.resource.data.orderId.size() > 0 &&
+            request.resource.data.clientId is string &&
+            request.resource.data.clientId.size() > 0 &&
+            request.resource.data.workerId is string &&
+            request.resource.data.workerId.size() > 0 &&
+            request.resource.data.clientId != request.resource.data.workerId &&
+            request.resource.data.createdAt is timestamp &&
+            (
+              !request.resource.data.keys().hasAny(['updatedAt']) ||
+              request.resource.data.updatedAt is timestamp
+            );
+      }
+
+      function orderLinkIsValidForChatCreate() {
+        let orderId = request.resource.data.orderId;
+        return existsAfter(orderRef(orderId)) &&
+            getAfter(orderRef(orderId)).data.clientId ==
+                request.resource.data.clientId &&
+            getAfter(orderRef(orderId)).data.acceptedWorkerId ==
+                request.resource.data.workerId &&
+            (
+              getAfter(orderRef(orderId)).data.status == 'IN_PROGRESS' ||
+              getAfter(orderRef(orderId)).data.status == 'COMPLETED' ||
+              getAfter(orderRef(orderId)).data.status == 'CANCELLED'
+            );
+      }
+
+      function chatIdentityFieldsUnchanged() {
+        return request.resource.data.clientId == resource.data.clientId &&
+            request.resource.data.workerId == resource.data.workerId &&
+            request.resource.data.orderId == resource.data.orderId &&
+            request.resource.data.participants == resource.data.participants &&
+            request.resource.data.createdAt == resource.data.createdAt;
+      }
+
+      function chatMetadataUpdateAllowed() {
+        let changed = request.resource.data.diff(resource.data).changedKeys();
+        return changed.hasOnly([
+              'updatedAt',
+              'lastMessage',
+              'lastMessageType',
+              'lastSenderId',
+              'lastMessageAt',
+              'clientName',
+              'clientAvatarUrl',
+              'workerName',
+              'workerAvatarUrl',
+            ]) &&
+            (
+              !changed.hasAny(['updatedAt']) ||
+              request.resource.data.updatedAt is timestamp
+            ) &&
+            (
+              !changed.hasAny(['lastMessageAt']) ||
+              request.resource.data.lastMessageAt is timestamp
+            ) &&
+            (
+              !changed.hasAny(['lastSenderId']) ||
+              (
+                request.resource.data.lastSenderId == resource.data.clientId ||
+                request.resource.data.lastSenderId == resource.data.workerId
+              )
+            ) &&
+            (
+              !changed.hasAny(['lastMessageType']) ||
+              (
+                request.resource.data.lastMessageType == 'text' ||
+                request.resource.data.lastMessageType == 'voice' ||
+                request.resource.data.lastMessageType == 'image'
+              )
+            );
+      }
+
+      function messageCreateShapeValid() {
+        return request.resource.data.keys().hasAll(['type', 'senderId', 'createdAt']) &&
+            request.resource.data.keys().hasOnly([
+              'type',
+              'senderId',
+              'text',
+              'audioUrl',
+              'imageUrls',
+              'createdAt',
+            ]) &&
+            request.resource.data.senderId == uid() &&
+            request.resource.data.senderId != 'system' &&
+            request.resource.data.createdAt is timestamp &&
+            request.resource.data.type is string &&
+            request.resource.data.type != 'system' &&
+            (
+              (
+                request.resource.data.type == 'text' &&
+                request.resource.data.text is string &&
+                request.resource.data.text.size() > 0
+              ) ||
+              (
+                request.resource.data.type == 'voice' &&
+                request.resource.data.audioUrl is string &&
+                request.resource.data.audioUrl.size() > 0
+              ) ||
+              (
+                request.resource.data.type == 'image' &&
+                request.resource.data.imageUrls is list &&
+                request.resource.data.imageUrls.size() > 0
+              )
+            );
+      }
+
+      allow read: if isChatMember(resource.data);
+
+      allow create: if isSignedIn() &&
+          chatId == request.resource.data.orderId &&
+          isChatMember(request.resource.data) &&
+          validChatCreateShape() &&
+          participantsValid() &&
+          orderLinkIsValidForChatCreate();
+
+      allow update: if isChatMember(resource.data) &&
+          chatIdentityFieldsUnchanged() &&
+          chatMetadataUpdateAllowed();
+
+      allow delete: if false;
+
+      match /messages/{messageId} {
+        function chatData() {
+          return exists(/databases/$(database)/documents/chats/$(chatId))
+              ? get(/databases/$(database)/documents/chats/$(chatId)).data
+              : getAfter(/databases/$(database)/documents/chats/$(chatId)).data;
+        }
+
+        allow read: if isChatMember(
+          chatData(),
+        );
+
+        allow create: if isSignedIn() &&
+            isChatMember(
+              chatData(),
+            ) &&
+            messageCreateShapeValid();
+
+        allow update, delete: if false;
+      }
+    }
+
+    match /reviews/{reviewId} {
+      allow read: if isSignedIn();
+
+      allow create: if isClient() &&
+          reviewId == request.resource.data.orderId &&
+          request.resource.data.keys().hasAll([
+            'orderId',
+            'workerId',
+            'clientId',
+            'rating',
+            'text',
+            'createdAt',
+          ]) &&
+          request.resource.data.keys().hasOnly([
+            'orderId',
+            'workerId',
+            'clientId',
+            'rating',
+            'text',
+            'clientName',
+            'createdAt',
+          ]) &&
+          request.resource.data.orderId is string &&
+          request.resource.data.workerId is string &&
+          request.resource.data.clientId == uid() &&
+          request.resource.data.rating is int &&
+          request.resource.data.rating >= 1 &&
+          request.resource.data.rating <= 5 &&
+          request.resource.data.text is string &&
+          request.resource.data.createdAt is timestamp &&
+          (
+            !request.resource.data.keys().hasAny(['clientName']) ||
+            request.resource.data.clientName is string
+          ) &&
+          orderExists(request.resource.data.orderId) &&
+          orderClient(request.resource.data.orderId) == uid() &&
+          orderWorker(request.resource.data.orderId) ==
+              request.resource.data.workerId &&
+          orderStatus(request.resource.data.orderId) == 'COMPLETED';
+
+      allow update, delete: if false;
+    }
+
+    match /presence/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn() && uid() == userId;
+    }
+
+    // Legacy collection support while migrating to orders.
+    match /requests/{requestId} {
+      allow create: if isSignedIn() && request.resource.data.client_uid == uid();
+      allow read: if isSignedIn() &&
+          (
+            resource.data.client_uid == uid() ||
+            (isWorker() && resource.data.status == 'pending')
+          );
+      allow update, delete: if isSignedIn() && resource.data.client_uid == uid();
+    }
+  }
+}
