@@ -57,8 +57,6 @@ This repository is not a toy prototype. It is a portfolio-grade, evolving produc
   <img src="https://img.shields.io/badge/Architecture-Feature%20Driven-0ea5e9" alt="Architecture" />
 </p>
 
-> If your repository slug is different, replace `TurginbayBekzat/NaqUsta` in badge URLs.
-
 ---
 
 <a id="en-3-toc"></a>
