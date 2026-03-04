@@ -1226,8 +1226,6 @@ NaqUsta екі негізгі аудиторияға жұмыс істейді:
   <img src="https://img.shields.io/badge/Architecture-Feature%20Driven-0ea5e9" alt="Architecture" />
 </p>
 
-> Егер сіздің репо адресіңіз басқа болса, badge URL-дегі `TurginbayBekzat/NaqUsta` мәнін ауыстырыңыз.
-
 ---
 
 <a id="kz-3-toc"></a>
